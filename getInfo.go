@@ -44,7 +44,7 @@ func getOSName() string {
 	if len(match) > 1 {
 		return match[1]
 	}
-	return ""
+	return "Your System"
 }
 
 func getGreenbootInfo() string {
