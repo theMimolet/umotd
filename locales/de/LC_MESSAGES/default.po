@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: xgotext\n"
+
+#: main.go:56
+msgid "Command"
+msgstr "Befehl"
+
+#: main.go:56
+msgid "Description"
+msgstr "Beschreibung"
+
+#: main.go:58
+msgid "List all available commands"
+msgstr "List alle verfügbaren Befehle"
+
+#: main.go:61
+msgid "Manage command line packages"
+msgstr "Verwalte command line packages"
+
+#: main.go:59
+msgid "Toggle this banner on/off"
+msgstr "Schalte diesen Banner ein/aus"
+
+#: main.go:60
+msgid "View system information"
+msgstr "Zeige Systeminformationen an"
+
+#: main.go:55
+msgid "Welcome to %s"
+msgstr "Willkommen bei %s"

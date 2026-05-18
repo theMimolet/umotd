@@ -1,0 +1,206 @@
+# SPDX-FileCopyrightText: 2026 Mimolet <themimolet@proton.me>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2026-05-17 04:46+0200\n"
+"Last-Translator: Mimolet <themimolet@proton.me>\n"
+"Language-Team: French <>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.04.1\n"
+
+#: getTips.go:26
+msgid ""
+"Aurora is your gateway to Cloud Native - find your flock at "
+"[landscape.cncf.io]"
+msgstr ""
+"Aurora est votre porte d'entrée au Cloud Native - trouvez votre vocation à "
+"[landscape.cncf.io]"
+
+#: getTips.go:25
+msgid ""
+"Aurora is your gateway to Kubernetes 󱃾 `kind create cluster` to [get started]"
+msgstr ""
+"Aurora est votre portail vers Kubernetes 󱃾 `kind create cluster` pour "
+"[commencer]"
+
+#: getTips.go:30
+msgid ""
+"Aurora separates the OS from your development environment - embrace the "
+"cloud-native workflow"
+msgstr ""
+"Aurora sépare le système d'exploitation de l'environnement de développement "
+"- prenez en mains le workflow cloud-native"
+
+#: main.go:74
+msgid "Bluesky"
+msgstr "Bluesky"
+
+#: main.go:30
+msgid "Boot Status: Healthy 󰄳"
+msgstr "État de démarrage: Sain 󰄳"
+
+#: getTips.go:53 getTips.go:56
+msgid ""
+"Check out `ujust bbrew` for curated selections of development and command "
+"line apps"
+msgstr ""
+"Essayez `ujust bbrew` pour avoir une sélection d'applications de "
+"développement et pour terminal"
+
+#: main.go:38
+msgid "Command"
+msgstr "Commandes"
+
+#: getTips.go:52
+msgid ""
+"Container development is OS-agnostic - your devcontainers work on Linux, "
+"macOS, and Windows"
+msgstr ""
+"Le développement par conteneur n'est pas lié à votre système - vos "
+"devcontainers marchent sur Linux, macOS et Windows"
+
+#: main.go:38
+msgid "Description"
+msgstr "Description"
+
+#: main.go:72
+msgid "Discord"
+msgstr "Discord"
+
+#: main.go:76
+msgid "Discuss"
+msgstr "Discussions"
+
+#: main.go:70
+msgid "Documentation"
+msgstr "Documentation"
+
+#: getTips.go:28
+msgid "Don't forget to check the [release notes]"
+msgstr ""
+
+#: main.go:52
+msgid "Enable terminal bling"
+msgstr ""
+
+#: getTips.go:29
+msgid "Help keep Aurora alive and healthy, consider [donating]"
+msgstr ""
+
+#: getTips.go:35
+msgid "KDE powers your desktop! Donate to [KDE]"
+msgstr ""
+"Votre bureau a été créé par la communauté KDE! N'hésitez pas à [faire un don]"
+
+#: getTips.go:49
+msgid "Like dinosaurs? `ujust toggle-dinosaurs`"
+msgstr "Vous aimez les dinosaures? `ujust toggle-dinosaurs`"
+
+#: getTips.go:39
+msgid "Like servers? Check out [ucore](https://github.com/ublue-os/ucore)"
+msgstr ""
+
+#: main.go:44
+msgid "List all available commands"
+msgstr "Liste toutes les commandes disponibles"
+
+#: main.go:50
+msgid "Manage command line packages"
+msgstr "Gère les paquets de ligne de commande"
+
+#: getTips.go:27
+msgid "Need more in-depth technical information?~Check out the [Aurora docs]"
+msgstr ""
+
+#: getTips.go:54
+msgid ""
+"Open a folder with Clapgrep (Found in the Bazaar App Store) for super "
+"powerful search"
+msgstr ""
+
+#: getTips.go:31
+msgid "Really love our wallpapers? Donate to [Chandeleer]"
+msgstr ""
+
+#: main.go:68
+msgid "Report an issue"
+msgstr "Signaler un problème"
+
+#: getTips.go:50
+msgid "Support the app store! Donate to  [Bazaar]"
+msgstr ""
+
+#: getTips.go:51
+msgid ""
+"Switch shells safely: change your shell in [Terminal settings instead of "
+"system-wide]"
+msgstr ""
+
+#: getTips.go:43
+msgid ""
+"Tailscale is included, check out [their docs](https://tailscale.com/kb/1017/"
+"install)"
+msgstr ""
+
+#: main.go:46
+msgid "Toggle this banner on/off"
+msgstr "Active/désactive ce panneau"
+
+#: getTips.go:40
+msgid "Update break something? You can roll back with `bootc rollback`"
+msgstr ""
+
+#: getTips.go:42
+msgid "Use `Ctrl`-`Alt`-`T` to quickly open a terminal"
+msgstr ""
+
+#: getTips.go:41
+msgid ""
+"Use `brew search` and `brew install` to install packages. Your system will "
+"take care of the updates automatically"
+msgstr ""
+
+#: main.go:48
+msgid "View system information"
+msgstr "Affiche les informations système"
+
+#: main.go:22
+msgid "Welcome to %s"
+msgstr "Bienvenue sur %s"
+
+#: getTips.go:45
+msgid "`tldr vim` will give you the basic rundown on commands for a given tool"
+msgstr ""
+
+#: getTips.go:44
+msgid ""
+"`ujust --choose` will show you each shortcut and the script it's running"
+msgstr ""
+
+#: getTips.go:48
+msgid ""
+"`ujust bbrew` and select `k8s-tools` that will get you started with "
+"Kubernetes development tools like kind and kubectl"
+msgstr ""
+
+#: getTips.go:47
+msgid ""
+"`ujust changelogs` shows a summary of the package changes since the last "
+"update"
+msgstr ""
+
+#: getTips.go:55
+msgid ""
+"`ujust jetbrains-toolbox` installs JetBrains tools in your home directory, "
+"all ready to go!"
+msgstr ""
+
+#: getTips.go:46
+msgid ""
+"`ujust rebase-helper` can help you roll back to a specific image, or to a "
+"different channel entirely, check the docs for more info"
+msgstr ""
