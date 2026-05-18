@@ -2,9 +2,11 @@
 
 Umotd is a proof of concept for a program-based MOTD that handles translations.
 
-It's written in Go and uses the gotext and glamour libraries.
+It's written in **Go** and uses the `gotext` and `glamour` libraries.
 
-**WIP** : The translations are not yet complete and the style is pretty much a work in progress - use a dark themed terminal for the best experience for now. If you want to contribute, you're welcome to submit a pull request or open an issue - it's very much appreciated.
+**WIP** : The translations are not yet complete and the style is pretty much a work in progress - use a dark themed terminal for the best experience for now. 
+
+If you want to contribute, you're welcome to submit a pull request or open an issue - it's very much appreciated.
 
 ## How to try
 
@@ -34,13 +36,13 @@ You can then use `LANGUAGE=<language code>` in front of the `./umotd` or `go run
 
 ## How to configure
 
-Umotd has default built in configs, but you may be more interested in having a custom config file.
+Umotd has default built-in configs, but you may be more interested in having a custom config file.
 
-You can create a custom config file at `/etc/umotd/config.json` or `$HOME/.config/umotd/config.json`.
+You can create a custom config file at `/etc/umotd/config.json` or `~/.config/umotd/config.json`.
 
-Note : There are built-in presets for tips, commands descriptions and links labels - the reason why is that it's needed if we want to get them translated.
+Note : There are built-in presets for tips, commands descriptions and links labels - those are used to get translated strings.
 
-Here's an example config file:
+Here's an example config file with all the currently available options (as of May 18th):
 ```json
 {
   "info_file": "/usr/share/ublue-os/image-info.json",
