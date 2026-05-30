@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-05-30 01:54+0200\n"
+"PO-Revision-Date: 2026-05-30 20:40+0200\n"
 "Last-Translator: Mimolet <themimolet@proton.me>\n"
 "Language-Team: French <>\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.04.1\n"
 
-#: getTips.go:80
+#: getTips.go:81
 msgid ""
 "%s is your gateway to Cloud Native - find your flock at [landscape.cncf.io]"
 "(%s)"
@@ -20,14 +20,14 @@ msgstr ""
 "%s est votre porte d'entrée au Cloud Native - trouvez votre vocation à "
 "[landscape.cncf.io](%s)"
 
-#: getTips.go:79
+#: getTips.go:80
 msgid ""
 "%s is your gateway to Kubernetes 󱃾 `kind create cluster` to [get started](%s)"
 msgstr ""
 "%s est votre porte d'entrée à Kubernetes 󱃾 `kind create cluster` pour "
 "[commencer](%s)"
 
-#: getTips.go:81
+#: getTips.go:82
 msgid ""
 "%s separates the OS from your development environment - embrace the cloud-"
 "native workflow !"
@@ -35,7 +35,7 @@ msgstr ""
 "%s sépare le système d'exploitation de l'environnement de développement - "
 "prenez en mains le workflow cloud-native !"
 
-#: getTips.go:106
+#: getTips.go:107
 msgid ""
 "*%s isn't a distro*, this is a custom image built on  Fedora Atomic Desktop "
 "technology ~ [View our mission](%s)"
@@ -43,7 +43,7 @@ msgstr ""
 "*%s n'est pas une distribution*, mais une image custom créée à partir de la "
 "technologie  Fedora Atomic ~ [Voir notre mission](%s)"
 
-#: getTips.go:108
+#: getTips.go:109
 msgid ""
 "**H.264 hardware acceleration is supported out of the box.** No tweaks "
 "necessary!"
@@ -57,7 +57,7 @@ msgstr ""
 "**Protégez les jeux auxquels vous jouez !** ~ [Découvrez Stop Killing Games]"
 "(%s)"
 
-#: getTips.go:107
+#: getTips.go:108
 msgid ""
 "**Support indie game preservation and OSS developers!** ~ [Join Hit Save!'s "
 "Patreon](%s)"
@@ -65,7 +65,7 @@ msgstr ""
 "**Soutenez la préservation de jeux indépendants et des développeurs de "
 "l'Open-Source !** ~ [Rejoignez le Patreon de Hit Save!](%s)"
 
-#: getTips.go:90
+#: getTips.go:91
 msgid ""
 "*Confused about what games are compatible with Linux?* The `ProtonDB Badges` "
 "plugin for Decky Loader adds community-powered game compatibility badges to "
@@ -75,7 +75,7 @@ msgstr ""
 "Loader pour les badges `ProtonDB` rajoute des badges de compatibilité gérés "
 "par la communauté pour toute votre bibliothèque 󰓓 Steam ~ [Plus d'infos](%s)"
 
-#: getTips.go:89
+#: getTips.go:90
 msgid ""
 "*Games missing icons?* The `SteamGridDB` plugin for Decky Loader makes it "
 "easy to add missing art ~ [More info](%s)"
@@ -91,7 +91,7 @@ msgid ""
 "and additional info for all of your files"
 msgstr ""
 
-#: getTips.go:88
+#: getTips.go:89
 msgid ""
 "*Install a game with Lutris?* Right click on it and `Create steam shortcut` "
 "to easily play it in 󰓓 Steam game mode."
@@ -108,14 +108,14 @@ msgstr ""
 "Nous recommandons Lutris pour jouer à des jeux Windows qui ne sont pas "
 "disponibles sur Steam. N'hésitez pas à regarder [le guide officiel] (%s)"
 
-#: getTips.go:91
+#: getTips.go:92
 msgid ""
 "*Looking for more security?* Tailscale and OpenVPN are built in, and can be "
 "controlled from 󰓓 Steam game mode by the `Tailscale Control` and "
 "`TunnelDeck` Decky loader plugins."
 msgstr ""
 
-#: getTips.go:63
+#: getTips.go:64
 msgid ""
 "*Looking for some nostalgia?* Enable `Compiz windows effect` from the "
 "Extension Manager."
@@ -125,22 +125,41 @@ msgstr ""
 msgid "*Looking to setup Waydroid?* ~ [View our documentation](%s)"
 msgstr ""
 
-#: getTips.go:64
+#: getTips.go:65
 msgid ""
 "*Missing the top left hot corner?* Apply pressure to the bottom edge of your "
 "screen with your mouse. You can also re-enable the hot corner from settings "
 "if desired."
 msgstr ""
 
-#: getTips.go:111
+#: getTips.go:67
 msgid ""
-"*Need more control over your Flatpaks?* Check out the Warehouse and Flatseal "
-"applications to manage them"
+"*Need more control over your Flatpak apps permissions?* Check out [Flatseal]"
+"(%s) to manage them."
 msgstr ""
-"*Besoin de plus de control sur vos applis Flatpaks?* Installez Warehouse et "
-"Flatseal pour les gérer comme un pro "
+"*Besoin de plus de contrôle sur vos applis Flatpaks?* Installez [Flatseal]"
+"(%s) pour les gérer"
 
-#: getTips.go:109
+#: getTips.go:58
+msgid ""
+"*Need more control over your Flatpak apps permissions?* Check out the \"App "
+"permissions\" settings under the \"Security and privacy\" panel in the "
+"system settings"
+msgstr ""
+"*Besoin de plus de contrôle sur vos applis Flatpaks?* Ouvrez l'appli "
+"\"Configuration du système\", et dans la section \"Sécurité et "
+"Confidentialité\", vous trouverez alors l'onglet \"Permission des "
+"applications\""
+
+#: getTips.go:112
+msgid ""
+"*Need to manage your Flatpak repositories and data?* Check out [Warehouse]"
+"(%s) to manage them"
+msgstr ""
+"*Besoin de plus de contrôle sur les sources et les données de vos "
+"applications Flatpak?*  Installez [Warehouse](%s) pour les gérer"
+
+#: getTips.go:110
 msgid ""
 "*No Flatpak or distro packaging available?* The Gear Lever app is included "
 "to make managing and integrating AppImages easy! ~ [Install it here](%s)"
@@ -155,13 +174,13 @@ msgid ""
 "rebase by build date ~ [View our guide](%s)"
 msgstr ""
 
-#: getTips.go:92
+#: getTips.go:93
 msgid ""
 "*Using a handheld that doesn't have enough buttons?* 󰓓 Steam game mode now "
 "supports touch gestures to slide out the menus, thanks to [ChimeraOS](%s)"
 msgstr ""
 
-#: getTips.go:62
+#: getTips.go:63
 msgid ""
 "*Want to control your device from your phone?* The GSConnect extension works "
 "with your KDE Connect app ! [More info](%s)"
@@ -179,7 +198,7 @@ msgid ""
 "our guide ~ [More info](%s)"
 msgstr ""
 
-#: getTips.go:86
+#: getTips.go:87
 msgid ""
 "*Want to install Decky Loader?* There's a `ujust` command for that! `ujust "
 "setup-decky install`"
@@ -205,7 +224,7 @@ msgstr "Bluesky"
 msgid "Boot Status"
 msgstr "État de démarrage"
 
-#: getTips.go:51 getTips.go:72
+#: getTips.go:51 getTips.go:73
 msgid ""
 "Check out `ujust bbrew` for curated selections of development and command "
 "line apps"
@@ -217,7 +236,7 @@ msgstr ""
 msgid "Command"
 msgstr "Commandes"
 
-#: getTips.go:76
+#: getTips.go:77
 msgid ""
 "Container development is OS-agnostic - your devcontainers work on Linux, "
 "macOS, and Windows"
@@ -229,7 +248,7 @@ msgstr ""
 msgid "Description"
 msgstr "Description"
 
-#: getTips.go:82
+#: getTips.go:83
 msgid ""
 "Develop with devcontainers - use `devcontainer.json` files in your projects "
 "for isolated, reproducible environments ! [Get started here](%s)"
@@ -255,7 +274,7 @@ msgstr ""
 msgid "Enable terminal bling"
 msgstr "Active le bling du terminal"
 
-#: getTips.go:61
+#: getTips.go:62
 msgid "GNOME makes your desktop! Donate to [GNOME](%s)"
 msgstr ""
 "Votre bureau a été créé par la fondation GNOME ! N'hésitez pas à leur [faire "
@@ -277,7 +296,7 @@ msgstr ""
 msgid "Help keep Bluefin alive and healthy, consider [donating](%s)"
 msgstr ""
 
-#: getTips.go:74
+#: getTips.go:75
 msgid ""
 "Install tealdeer with brew to have a basic rundown on commands for a given "
 "tool: `tldr vim`"
@@ -301,11 +320,11 @@ msgstr ""
 "Votre bureau a été créé par la communauté KDE! N'hésitez pas à leur [faire "
 "un don](%s)"
 
-#: getTips.go:102
+#: getTips.go:103
 msgid "Like dinosaurs? `ujust toggle-dinosaurs`"
 msgstr "Vous aimez les dinosaures? `ujust toggle-dinosaurs`"
 
-#: getTips.go:70
+#: getTips.go:71
 msgid "Like servers? Check out [ucore](%s)"
 msgstr "Aimez-vous les serveurs ? Alors [ucore](%s) est fait pour vous!"
 
@@ -317,7 +336,7 @@ msgstr "Liste toutes les commandes disponibles"
 msgid "Manage command line packages"
 msgstr "Gère les paquets de ligne de commande"
 
-#: getTips.go:65
+#: getTips.go:66
 msgid "Manage desktop extensions with *Extension Manager*."
 msgstr "Gérez vos extensions Gnome avec *Extension Manager*."
 
@@ -340,60 +359,58 @@ msgstr ""
 "Pour plus d'informations techniques, jetez un coup d'œil au [guide "
 "d'administrateur Bluefin](%s)"
 
-#: getTips.go:112
+#: getTips.go:113
 msgid ""
 "Open a folder with Clapgrep for super powerful search ~ [Install it here](%s)"
 msgstr ""
 "L'appli Clapgrep vous permet d'ouvrir vos dossiers et de faire des "
 "recherches approfondies ~ [Installez-la ici](%s)"
 
-#: getTips.go:105
+#: getTips.go:106
 msgid ""
 "Packages installed in Distrobox can be exported to appear like any other "
 "application ~ [View documentation](%s)"
 msgstr ""
 
-#: getTips.go:77
+#: getTips.go:78
 msgid ""
 "Performance profiling tools are built-in: try `sysprof`, `bpftrace`, and "
 "other debugging tools"
 msgstr ""
 
-#: getTips.go:66
+#: getTips.go:42
 msgid ""
 "ProtonPlus can be used to install and update custom versions of Proton. We "
 "recommend Proton-GE for problematic Steam games and Wine-GE for all other "
 "use cases outside of Steam."
 msgstr ""
 
-#: getTips.go:42
-msgid ""
-"ProtonPlus can be used to install and update custom versions of Proton. We "
-"recommend Proton-GE for problematic Steam games."
-msgstr ""
-
 #: getTips.go:28
 msgid "Really love our wallpapers? Donate to [Chandeleer](%s)"
 msgstr ""
+"Vous adorez nous fonds d'écran ? Faites un don à notre artiste [Chandeleer]"
+"(%s)"
 
 #: main.go:70
 msgid "Report an issue"
 msgstr "Signaler un problème"
 
-#: getTips.go:103
+#: getTips.go:104
 msgid "Support the app store! Donate to  [Bazaar](%s)"
 msgstr ""
 "Soutenez le développement de la logithèque! Faites un don à  [Bazaar](%s)"
 
-#: getTips.go:104
+#: getTips.go:105
 msgid ""
 "Switch shells safely: change your shell in [Terminal settings instead of "
 "system-wide](%s)"
 msgstr ""
 
-#: getTips.go:110
+#: getTips.go:111
 msgid "Tailscale is included, check out [their docs](%s)"
 msgstr ""
+"Tailscale est inclus dans votre système, n'hésitez pas à jeter un coup d'œil "
+"à [leur documentation](%s)"
 
 #: getTips.go:41
 msgid ""
@@ -401,10 +418,10 @@ msgid ""
 "rebasing to older Bazzite builds"
 msgstr ""
 
-#: getTips.go:87
+#: getTips.go:88
 msgid ""
 "The updater built into 󰓓 Steam game mode has been modified to update "
-"Bazzite, Flatpaks, and Distrobox containers. *Just ignore the changelog.*"
+"Bazzite, Flatpak apps, and Distrobox containers. *Just ignore the changelog.*"
 msgstr ""
 "Le logiciel de mise à jour intégré à 󰓓 Steam game mode a été modifié pour "
 "aussi mettre à jour Bazzite, vos applications et les conteneurs distrobox. "
@@ -414,7 +431,11 @@ msgstr ""
 msgid "Toggle this banner on/off"
 msgstr "Active/désactive ce panneau"
 
-#: getTips.go:97
+#: main.go:26
+msgid "Unknown system"
+msgstr "Système inconnu"
+
+#: getTips.go:98
 msgid "Update break something? You can roll back with `bootc rollback`"
 msgstr ""
 "Une mise à jour a cassé quelque chose? Revenez en arrière avec la commande "
@@ -426,11 +447,11 @@ msgstr ""
 "*DistroShelf* permet de créer des environnements conteneurisés avec vos "
 "distributions favorites!"
 
-#: getTips.go:96
+#: getTips.go:97
 msgid "Use `Ctrl`-`Alt`-`T` to quickly open a terminal"
 msgstr "`CTRL` + `ALT` + `T` pour ouvrir un terminal à tout moment"
 
-#: getTips.go:98
+#: getTips.go:99
 msgid ""
 "Use `brew search` and `brew install` to install packages. %s will take care "
 "of the updates automatically"
@@ -438,7 +459,7 @@ msgstr ""
 "Les commandes `brew search` et `brew install` vous permettent de rechercher "
 "et d'installer des paquets. %s les mettra à jour automatiquement"
 
-#: getTips.go:78
+#: getTips.go:79
 msgid ""
 "Use `docker compose` for multi-container development if devcontainers don't "
 "fit your workflow"
@@ -459,17 +480,17 @@ msgid "View system information"
 msgstr "Affiche les informations système"
 
 #: main.go:22
-msgid "Welcome to %s"
-msgstr "Bienvenue sur %s"
+msgid "Welcome to %s !"
+msgstr "Bienvenue sur %s !"
 
-#: getTips.go:99
+#: getTips.go:100
 msgid ""
 "`ujust --choose` will show you each shortcut and the script it's running"
 msgstr ""
 "La commande `ujust --choose` affiche chaque commande  `ujust` et les scripts "
 "qu'ils utilisent"
 
-#: getTips.go:71
+#: getTips.go:72
 msgid ""
 "`ujust bbrew` and select `ide` for our curated selections of development "
 "environments (e.g. VSCode, JetBrains, NeoVim)"
@@ -477,7 +498,7 @@ msgstr ""
 "La section `ide` de `ujust bbrew` vous liste notre sélection "
 "d'environnements de développement (comme VSCode, JetBrains ou NeoVim)"
 
-#: getTips.go:75
+#: getTips.go:76
 msgid ""
 "`ujust bbrew` and select `k8s-tools` that will get you started with "
 "Kubernetes development tools like `kind` and `kubectl`"
@@ -485,7 +506,7 @@ msgstr ""
 "La section `k8s-tools` de `ujust bbrew` vous affiche notre sélection "
 "d'outils Kubernetes pour bien commencer, comme `kind` et `kubectl`"
 
-#: getTips.go:101
+#: getTips.go:102
 msgid ""
 "`ujust changelogs` shows a summary of the package changes since the last "
 "update"
@@ -493,7 +514,7 @@ msgstr ""
 "La commande `ujust changelogs` affiche un résumé des changements depuis la "
 "dernière mise à jour"
 
-#: getTips.go:73
+#: getTips.go:74
 msgid ""
 "`ujust jetbrains-toolbox` installs JetBrains tools in your home directory, "
 "all ready to go!"
@@ -501,7 +522,7 @@ msgstr ""
 "La commande `ujust jetbrains-toolbox` permet d'installer les outils "
 "JetBrains dans votre dossier personnel, tous prêts à l'utilisation !"
 
-#: getTips.go:100
+#: getTips.go:101
 msgid ""
 "`ujust rebase-helper` can help you roll back to a specific image, or to a "
 "different channel entirely, check the docs for more info"
@@ -509,7 +530,3 @@ msgstr ""
 "La commande `ujust rebase-helper` peut vous aidez à basculer sur une version "
 "antérieure de votre système en cas de soucis - il y a plus d'informations à "
 "ce sujet dans la documentation"
-
-#: main.go:26
-msgid "unknown system"
-msgstr "Système inconnu"
