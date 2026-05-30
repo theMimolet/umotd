@@ -13,15 +13,14 @@ type ImageInfo struct {
 	ImageTag string `json:"image-tag"`
 }
 
-func getImageInfo(file string) ImageInfo {
-	infoFile := file
+func getImageInfo(infoFile string) ImageInfo {
 	if infoFile == "" {
 		infoFile = "/usr/share/ublue-os/image-info.json"
 	}
 
 	data, err := os.ReadFile(infoFile)
 	if err != nil {
-		return ImageInfo{}
+		return ImageInfo{"", ""}
 	}
 
 	var info ImageInfo
@@ -48,24 +47,29 @@ func getOSName() string {
 }
 
 func getGreenbootInfo() string {
-	data, err := os.ReadFile("/run/motd.d/boot-status")
-	if err == nil {
+	cmd_grep := exec.Command("grep", "-q", "status is GREEN", "/etc/motd.d/boot-status")
+	err := cmd_grep.Run()
+	if err != nil {
 		return ""
 	}
-	re := regexp.MustCompile(string(data))
+	re := regexp.MustCompile(`status is GREEN`)
 
-	isGreen := re.FindString("GREEN")
-	isSuccess := re.FindString("SUCCESS")
-	if isGreen != "" || isSuccess != "" {
+	isGreen := re.FindString("status is GREEN")
+	if isGreen != "" {
 		return "healthy"
 	} else {
-		cmd := exec.Command("cat", "/run/motd.d/boot-status")
+		cmd := exec.Command("cat", "/etc/motd.d/boot-status")
 		output, err := cmd.Output()
 		if err != nil {
 			return ""
 		}
 		return "`" + string(output) + "`"
 	}
+}
+
+func isBootcSystem() bool {
+	_, err := os.Stat("/run/ostree-booted")
+	return err == nil
 }
 
 // func getDesktop() string {

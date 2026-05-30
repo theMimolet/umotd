@@ -27,7 +27,6 @@ type Link struct {
 // sensible defaults
 func defaultConfig() Config {
 	return Config{
-		InfoFile: "/usr/share/ublue-os/image-info.json",
 		Commands: []Command{
 			{Cmd: "ujust --choose", Desc: "cmd_list"},
 			{Cmd: "ujust toggle-user-motd", Desc: "motd_toggle"},
@@ -35,13 +34,12 @@ func defaultConfig() Config {
 			{Cmd: "brew help", Desc: "cli_pkg"},
 		},
 		Links: []Link{
-			{Name: "issues", URL: "https://issues.bazzite.gg/"},
-			{Name: "docs", URL: "https://docs.bazzite.gg/"},
-			{Name: "discord", URL: "https://discord.gg/bazzite"},
-			{Name: "bluesky", URL: "https://bluesky.bazzite.gg/"},
+			{Name: "discuss", URL: "https://universal-blue.discourse.group/"},
+			{Name: "discord", URL: "https://discord.com/invite/8RZGC3uFzA"},
+			{Name: "mastodon", URL: "https://fosstodon.org/@UniversalBlue"},
 		},
 		TipsPresets: []string{
-			"aurora", "kde", "ublue", "dev",
+			"ublue", "dev",
 		},
 	}
 }

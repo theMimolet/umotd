@@ -20,14 +20,17 @@ func main() {
 
 	// Gets the image info and OS name
 	in := "# " + l.Get("Welcome to %s", getOSName()) + "\n"
-	in += " 󱋩 `" + getImageInfo(cfg.InfoFile).ImageRef + ":" + getImageInfo(cfg.InfoFile).ImageTag + "` \n"
-	in += "\n"
+	if imageInfo := getImageInfo(cfg.InfoFile); imageInfo.ImageRef != "" || imageInfo.ImageTag != "" {
+		in += " 󱋩 `" + imageInfo.ImageRef + ":" + imageInfo.ImageTag + "` \n"
+	} else if isBootcSystem() {
+		in += " 󱋩 `" + l.Get("Unknown system") + "` \n"
+	}
 
 	// Gets the Greenboot status
 	if greenboot := getGreenbootInfo(); greenboot != "" {
-		in += " 󰟀 "
+		in += "\n 󰟀  " + l.Get("Boot Status") + ": "
 		if greenboot == "healthy" {
-			in += l.Get("Boot Status: Healthy 󰄳")
+			in += l.Get("Healthy") + " 󰄳"
 		} else {
 			in += greenboot
 		}
@@ -35,7 +38,7 @@ func main() {
 	}
 
 	// Command list
-	in += " |   " + l.Get("Command") + " | " + l.Get("Description") + " | \n"
+	in += " |  " + l.Get("Command") + " | " + l.Get("Description") + " | \n"
 	in += "| ------------ | ----------- |\n"
 	var cmdSb strings.Builder
 	for _, cmd := range cfg.Commands {
@@ -57,8 +60,7 @@ func main() {
 	in += "\n"
 
 	// Gets a random tip
-	in += getRandomTip(cfg.TipsPresets...) + "\n"
-	in += "\n"
+	in += getRandomTip(cfg.TipsPresets...) + "\n\n"
 
 	// Gets the links
 	var linkSb strings.Builder
