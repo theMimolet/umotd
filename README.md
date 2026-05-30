@@ -1,12 +1,23 @@
 # Umotd
 
-Umotd is a proof of concept for a program-based MOTD that handles translations.
+Umotd is a translatable and configurable MOTD - made for your favorite Bootc system !
 
 It's written in **Go** and uses the `gotext` and `glamour` libraries.
 
-**WIP** : The translations are not yet complete and the style is pretty much a work in progress - use a dark themed terminal for the best experience for now. 
+**WIP** : The translations are not yet complete and some features still need testing. 
 
 If you want to contribute, you're welcome to submit a pull request or open an issue - it's very much appreciated.
+
+## What's next
+
+Here are features that are planned for the future:
+
+- Shows a warning if the installed image is over a certain amount of time (e.g. one month - configurable)
+- Shows a warning if the installed image is unverified (could be disabled via configuration)
+
+> Both are already done in Bazzite, so it's only a matter of porting them over to Umotd.
+
+- Custom configurable tips
 
 ## How to try
 
@@ -19,9 +30,17 @@ go build
 ./umotd
 ```
 
+> You can also just drop the `umotd` binary into your usual `/bin` folder and it will work from anywhere.
+
 ## How to translate
 
-To translate Umotd, you'll need to have go, gettext and xgotext (`go install github.com/leonelquinteros/gotext/cli/xgotext@latest`)
+To translate Umotd, you'll need to have `go`, `gettext` and `xgotext` 
+
+All of these tools are available on most Linux distributions, and can be installed using your package manager.
+
+- `go`: `brew install go`
+- `gettext`: `brew install gettext`
+- `xgotext`: `go install github.com/leonelquinteros/gotext/cli/xgotext@latest`
 
 Then you can simply run the translators.sh script to extract and update the translations.
 ```
@@ -42,10 +61,9 @@ You can create a custom config file at `/etc/umotd/config.json` or `~/.config/um
 
 Note : There are built-in presets for tips, commands descriptions and links labels - those are used to get translated strings.
 
-Here's an example config file with all the currently available options (as of May 18th):
+Here's an example config file with all the currently available options (there's the example folder if you want to see concrete use cases):
 ```json
 {
-  "info_file": "/usr/share/ublue-os/image-info.json",
   "commands": [
     {
       "cmd": "ujust --choose",
@@ -72,6 +90,7 @@ Here's an example config file with all the currently available options (as of Ma
       "desc": "Custom command field (won't be translated)"
     }
   ],
+  "info-file": "/usr/share/ublue-os/image-info.json",
   "links": [
     {
       "name": "issues",
@@ -98,6 +117,8 @@ Here's an example config file with all the currently available options (as of Ma
       "url": "https://www.innersloth.com/games/among-us/"
     }
   ],
-  "tips_presets": ["aurora", "dev", "kde", "ublue"]
+  "symbol": "!",
+  "tips-presets": ["aurora", "dev", "kde", "ublue"],
+  "use-accent-color": true
 }
 ```

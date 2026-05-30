@@ -1,0 +1,25 @@
+{
+  "commands": [
+    {
+      "cmd": "zjust toggle-user-motd",
+      "desc": "motd_toggle"
+    },
+    {
+      "cmd": "zjust zdots-update",
+      "desc": "Update your unmodified dotfiles"
+    },
+    {
+      "cmd": "zjust update-greeter",
+      "desc": "Update your greeter with modifications from your current user"
+    },
+    {
+      "cmd": "zjust reset-niri",
+      "desc": "Reset Niri to the default configuration"
+    },
+    {
+      "cmd": "sudo bootc update",
+      "desc": "Manually update the system"
+    }
+  ],
+  "symbol": "!"
+}

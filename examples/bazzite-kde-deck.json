@@ -1,0 +1,41 @@
+{
+  "commands": [
+    {
+      "cmd": "ujust --choose",
+      "desc": "cmd_list"
+    },
+    {
+      "cmd": "ujust toggle-user-motd",
+      "desc": "motd_toggle"
+    },
+    {
+      "cmd": "fastfetch",
+      "desc": "sys_info"
+    },
+    {
+      "cmd": "brew help",
+      "desc": "cli_pkg"
+    }
+  ],
+  "links": [
+    {
+      "name": "issues",
+      "url": "https://issues.bazzite.gg/"
+    },
+    {
+      "name": "docs",
+      "url": "https://docs.bazzite.gg/"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/bazzite"
+    },
+    {
+      "name": "bluesky",
+      "url": "https://bluesky.bazzite.gg/"
+    }
+  ],
+  "symbol": "󰊴",
+  "tips-presets": ["ublue", "bazzite", "kde", "deck"],
+  "use-accent-color": true
+}

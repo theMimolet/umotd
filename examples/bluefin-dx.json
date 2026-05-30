@@ -1,0 +1,36 @@
+{
+  "commands": [
+    {
+      "cmd": "ujust --choose",
+      "desc": "cmd_list"
+    },
+    {
+      "cmd": "ujust toggle-user-motd",
+      "desc": "motd_toggle"
+    },
+    {
+      "cmd": "ujust bluefin-cli",
+      "desc": "terminal_bling"
+    },
+    {
+      "cmd": "brew help",
+      "desc": "cli_pkg"
+    }
+  ],
+  "links": [
+    {
+      "name": "issues",
+      "url": "https://issues.projectbluefin.io/"
+    },
+    {
+      "name": "Ask Bluefin",
+      "url": "https://ask.projectbluefin.io/"
+    },
+    {
+      "name": "docs",
+      "url": "https://docs.projectbluefin.io/"
+    }
+  ],
+  "symbol": "󱍢",
+  "tips-presets": ["ublue", "bluefin", "gnome", "dev"]
+}
