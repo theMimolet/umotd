@@ -36,15 +36,14 @@ go build
 
 To translate Umotd, you'll need to have `go`, `gettext` and `xgotext` 
 
-All of these tools are available on most Linux distributions, and can be installed using your package manager.
-
+You can get them all using the following commands: 
 - `go`: `brew install go`
-- `gettext`: `brew install gettext`
+- `gettext`: `brew install gettext` (actually might be preinstalled)
 - `xgotext`: `go install github.com/leonelquinteros/gotext/cli/xgotext@latest`
 
 Then you can simply run the translators.sh script to extract and update the translations.
 ```
-sh ./translators.sh <language code>
+./translators.sh <language code>
 ```
 
 If your language already exists, it will be updated automatically. If not, a new language file will be created for you at `locales/<language code>/LC_MESSAGES/default.po`.
