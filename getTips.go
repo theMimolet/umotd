@@ -55,6 +55,7 @@ func getRandomTip(preset ...string) string {
 				l.Get("KDE powers your desktop! Donate to [KDE](%s)", "https://kde.org/donate"),
 				l.Get("*Want to control your device from your phone?* The KDE Connect app functions with all images ~ [More info](%s)", "https://kdeconnect.kde.org/"),
 				l.Get("*Want to customize and theme your desktop?* Tweak your desktop by following our guide ~ [More info](%s)", "https://docs.bazzite.gg/General/Desktop_Environment_Tweaks/"),
+				l.Get("*Need more control over your Flatpaks permissions?* Check out the \"App permissions\" settings under the \"Security and privacy\" panel in the system settings"),
 			}...)
 		case "gnome":
 			tips = append(tips, []string{
@@ -64,6 +65,7 @@ func getRandomTip(preset ...string) string {
 				l.Get("*Missing the top left hot corner?* Apply pressure to the bottom edge of your screen with your mouse. You can also re-enable the hot corner from settings if desired."),
 				l.Get("Manage desktop extensions with *Extension Manager*."),
 				l.Get("ProtonPlus can be used to install and update custom versions of Proton. We recommend Proton-GE for problematic Steam games and Wine-GE for all other use cases outside of Steam."),
+				l.Get("*Need more control over your Flatpaks permissions?* Check out [Flatseal](%s) to manage them.", "appstream://com.github.tchx84.Flatseal"),
 			}...)
 		case "dev":
 			tips = append(tips, []string{
@@ -108,7 +110,7 @@ func getRandomTip(preset ...string) string {
 				l.Get("**H.264 hardware acceleration is supported out of the box.** No tweaks necessary!"),
 				l.Get("*No Flatpak or distro packaging available?* The Gear Lever app is included to make managing and integrating AppImages easy! ~ [Install it here](%s)", "appstream://it.mijorus.gearlever"),
 				l.Get("Tailscale is included, check out [their docs](%s)", "https://tailscale.com/kb/1017/install"),
-				l.Get("*Need more control over your Flatpaks?* Check out the Warehouse and Flatseal applications to manage them"),
+				l.Get("*Need to manage your Flatpaks repositories and data?* Check out [Warehouse](%s) to manage them", "appstream://io.github.flattool.Warehouse"),
 				l.Get("Open a folder with Clapgrep for super powerful search ~ [Install it here](%s)", "appstream://de.leopoldluley.Clapgrep"),
 			}...)
 		default:
