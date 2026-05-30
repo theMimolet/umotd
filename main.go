@@ -19,7 +19,7 @@ func main() {
 	cfg := getConfig()
 
 	// Gets the image info and OS name
-	in := "# " + l.Get("Welcome to %s !", getOSName()) + "\n"
+	in := "# " + l.Get("Welcome to %s", getOSName()) + " " + cfg.Symbol + "\n"
 	if imageInfo := getImageInfo(cfg.InfoFile); imageInfo.ImageRef != "" || imageInfo.ImageTag != "" {
 		in += " 󱋩 `" + imageInfo.ImageRef + ":" + imageInfo.ImageTag + "` \n"
 	} else if isBootcSystem() {
@@ -38,53 +38,57 @@ func main() {
 	}
 
 	// Command list
-	in += " |  " + l.Get("Command") + " | " + l.Get("Description") + " | \n"
-	in += "| ------------ | ----------- |\n"
-	var cmdSb strings.Builder
-	for _, cmd := range cfg.Commands {
-		switch cmd.Desc {
-		case "cmd_list":
-			cmd.Desc = l.Get("List all available commands")
-		case "motd_toggle":
-			cmd.Desc = l.Get("Toggle this banner on/off")
-		case "sys_info":
-			cmd.Desc = l.Get("View system information")
-		case "cli_pkg":
-			cmd.Desc = l.Get("Manage command line packages")
-		case "terminal_bling":
-			cmd.Desc = l.Get("Enable terminal bling")
+	if len(cfg.Commands) > 0 {
+		in += " |  " + l.Get("Command") + " | " + l.Get("Description") + " | \n"
+		in += "| ------------ | ----------- |\n"
+		var cmdSb strings.Builder
+		for _, cmd := range cfg.Commands {
+			switch cmd.Desc {
+			case "cmd_list":
+				cmd.Desc = l.Get("List all available commands")
+			case "motd_toggle":
+				cmd.Desc = l.Get("Toggle this banner on/off")
+			case "sys_info":
+				cmd.Desc = l.Get("View system information")
+			case "cli_pkg":
+				cmd.Desc = l.Get("Manage command line packages")
+			case "terminal_bling":
+				cmd.Desc = l.Get("Enable terminal bling")
+			}
+			fmt.Fprintf(&cmdSb, "| `%s`  | %s |\n", cmd.Cmd, cmd.Desc)
 		}
-		fmt.Fprintf(&cmdSb, "| `%s`  | %s |\n", cmd.Cmd, cmd.Desc)
+		in += cmdSb.String()
+		in += "\n"
 	}
-	in += cmdSb.String()
-	in += "\n"
 
 	// Gets a random tip
 	in += getRandomTip(cfg.TipsPresets...) + "\n\n"
 
 	// Gets the links
-	var linkSb strings.Builder
-	for _, link := range cfg.Links {
-		switch link.Name {
-		case "issues":
-			link.Name = "󰊤 [" + l.Get("Report an issue") + "]"
-		case "docs":
-			link.Name = "󰈙 [" + l.Get("Documentation") + "]"
-		case "discord":
-			link.Name = "󰙯 [" + l.Get("Discord") + "]"
-		case "bluesky":
-			link.Name = " [" + l.Get("Bluesky") + "]"
-		case "discuss":
-			link.Name = "󰊌 [" + l.Get("Discuss") + "]"
-		case "mastodon":
-			link.Name = "󰫑 [" + l.Get("Mastodon") + "]"
-		default:
-			link.Name = "󰌹 [" + link.Name + "]"
+	if len(cfg.Links) > 0 {
+		var linkSb strings.Builder
+		for _, link := range cfg.Links {
+			switch link.Name {
+			case "issues":
+				link.Name = "󰊤 [" + l.Get("Report an issue") + "]"
+			case "docs":
+				link.Name = "󰈙 [" + l.Get("Documentation") + "]"
+			case "discord":
+				link.Name = "󰙯 [" + l.Get("Discord") + "]"
+			case "bluesky":
+				link.Name = " [" + l.Get("Bluesky") + "]"
+			case "discuss":
+				link.Name = "󰊌 [" + l.Get("Discuss") + "]"
+			case "mastodon":
+				link.Name = "󰫑 [" + l.Get("Mastodon") + "]"
+			default:
+				link.Name = "󰌹 [" + link.Name + "]"
+			}
+			fmt.Fprintf(&linkSb, " - %s(%s)\n", link.Name, link.URL)
 		}
-		fmt.Fprintf(&linkSb, " - %s(%s)\n", link.Name, link.URL)
+		in += linkSb.String()
+		in += "\n"
 	}
-	in += linkSb.String()
-	in += "\n"
 
 	var out string
 

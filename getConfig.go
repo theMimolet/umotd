@@ -8,10 +8,11 @@ import (
 
 type Config struct {
 	Commands       []Command `json:"commands"`
-	InfoFile       string    `json:"info_file"`
+	InfoFile       string    `json:"info-file"`
 	Links          []Link    `json:"links"`
-	UseAccentColor bool      `json:"use_accent_color"`
-	TipsPresets    []string  `json:"tips_presets"`
+	Symbol         string    `json:"symbol"`
+	TipsPresets    []string  `json:"tips-presets"`
+	UseAccentColor bool      `json:"use-accent-color"`
 }
 
 type Command struct {
@@ -38,6 +39,7 @@ func defaultConfig() Config {
 			{Name: "discord", URL: "https://discord.com/invite/8RZGC3uFzA"},
 			{Name: "mastodon", URL: "https://fosstodon.org/@UniversalBlue"},
 		},
+		Symbol: "!",
 		TipsPresets: []string{
 			"ublue",
 		},
@@ -56,7 +58,7 @@ func writeDefaultConfig(path string) error {
 }
 
 func getConfig(filepaths ...string) Config {
-	cfg := defaultConfig()
+	cfg := Config{}
 
 	if len(filepaths) == 0 {
 		filepaths = []string{
@@ -73,8 +75,8 @@ func getConfig(filepaths ...string) Config {
 		if err := json.Unmarshal(data, &cfg); err != nil {
 			continue
 		}
-		break
+		return cfg
 	}
 
-	return cfg
+	return defaultConfig()
 }
