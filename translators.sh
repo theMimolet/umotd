@@ -2,7 +2,9 @@
 # Translators script for umotd
 
 if [ -z "$1" ]; then
-    echo "Usage: $0 <language>"
+    echo "Run the command like this: \`$0 <your-language-code>\`"
+    echo ""
+    echo "> Example: \`$0 fr\`"
     exit 1
 fi
 
