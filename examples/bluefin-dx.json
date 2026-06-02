@@ -32,5 +32,6 @@
     }
   ],
   "symbol": "󱍢",
-  "tips-presets": ["ublue", "bluefin", "gnome", "dev"]
+  "tips-presets": ["bluefin", "gnome", "ublue", "ublue-dev"],
+  "use-accent-color": true
 }
