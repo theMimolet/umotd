@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-06-02 12:57+0200\n"
+"PO-Revision-Date: 2026-06-02 18:59+0200\n"
 "Last-Translator: Mimolet <themimolet@proton.me>\n"
 "Language-Team: French <>\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.04.1\n"
 
-#: getTips.go:100
+#: getTips.go:94
 msgid ""
 "*%s isn't a distro*, this is a custom image built on  Fedora Atomic Desktop "
 "technology — [View our mission](%s)"
@@ -20,7 +20,7 @@ msgstr ""
 "*%s n'est pas une distribution*, mais une image custom créée à partir de la "
 "technologie  Fedora Atomic — [Voir notre mission](%s)"
 
-#: getTips.go:120
+#: getTips.go:114
 msgid ""
 "**%s is your gateway to Cloud Native** — find your flock at "
 "[landscape.cncf.io](%s)"
@@ -28,7 +28,7 @@ msgstr ""
 "**%s est votre porte d'entrée au Cloud Native** — trouvez votre vocation à "
 "[landscape.cncf.io](%s)"
 
-#: getTips.go:119
+#: getTips.go:113
 msgid ""
 "**%s is your gateway to Kubernetes** 󱃾 `kind create cluster` to [get started]"
 "(%s)"
@@ -36,7 +36,7 @@ msgstr ""
 "**%s est votre porte d'entrée à Kubernetes** 󱃾 `kind create cluster` pour "
 "[commencer](%s)"
 
-#: getTips.go:121
+#: getTips.go:115
 msgid ""
 "**%s separates the OS from your development environment** — take full "
 "advantage of the cloud-native workflow!"
@@ -44,13 +44,13 @@ msgstr ""
 "**%s sépare le système d'exploitation de votre environnement de "
 "développement** — prenez en mains le workflow cloud-native !"
 
-#: getTips.go:30
+#: getTips.go:26
 msgid "**Are you into dinosaurs?** Then try `ujust toggle-dinosaurs`."
 msgstr ""
 "**Aimez-vous les dinosaures?** Si c'est le cas, essayez `ujust toggle-"
 "dinosaurs`."
 
-#: getTips.go:36
+#: getTips.go:33
 msgid ""
 "**Care about game preservation?** Support the Stop Killing Games initiative "
 "— [Find out more](%s)"
@@ -58,7 +58,7 @@ msgstr ""
 "**Vous souciez vous de la préservation de vos jeux?** Si c'est le cas, "
 "soutenez l'initiative Stop Killing Games — [En savoir plus](%s)"
 
-#: getTips.go:67
+#: getTips.go:61
 msgid ""
 "**Confused about what games are compatible with Linux?** The `ProtonDB "
 "Badges` plugin for Decky Loader adds community-powered game compatibility "
@@ -69,7 +69,7 @@ msgstr ""
 "par la communauté pour toute votre bibliothèque 󰓓 Steam — [En savoir plus]"
 "(%s)"
 
-#: getTips.go:116
+#: getTips.go:110
 msgid ""
 "**Container development is OS-agnostic** — your devcontainers work on Linux, "
 "macOS, and Windows."
@@ -77,7 +77,7 @@ msgstr ""
 "**Le développement par conteneur n'est pas lié à votre système** — vos "
 "devcontainers marchent sur Linux, macOS et Windows"
 
-#: getTips.go:122
+#: getTips.go:116
 msgid ""
 "**Develop with devcontainers** — use `devcontainer.json` files in your "
 "projects for isolated, reproducible environments! [Get started here](%s)"
@@ -86,14 +86,14 @@ msgstr ""
 "des environnements isolés et reproductibles qui marchent sur n'importe quel "
 "système! [Commencer](%s)"
 
-#: getTips.go:93
+#: getTips.go:87
 msgid ""
 "**Did an update break something?** You can roll back with `bootc rollback`."
 msgstr ""
 "**Une mise à jour a cassé quelque chose ?** Revenez en arrière avec la "
 "commande `bootc rollback`."
 
-#: getTips.go:35
+#: getTips.go:32
 msgid ""
 "**Did an update break something?** You can roll back, pin the previous "
 "release, or rebase to an older build — [view the guide](%s)"
@@ -102,11 +102,11 @@ msgstr ""
 "stopper les mises à jour et retourner à une version antérieure — [Voir le "
 "guide](%s)"
 
-#: getTips.go:111
+#: getTips.go:105
 msgid "**Do you like servers?** Then check out [ucore](%s)"
 msgstr "**Aimez-vous les serveurs ?** Alors [ucore](%s) est fait pour vous!"
 
-#: getTips.go:107
+#: getTips.go:101
 msgid ""
 "**Do you love our wallpapers?** Check out the full [Universal Blue artwork "
 "collection](%s)"
@@ -114,13 +114,13 @@ msgstr ""
 "**Aimez-vous nos fonds d'écran ?** Vous allez être intéressés par la "
 "[collection d'artworks d'Universal Blue](%s)"
 
-#: getTips.go:77
+#: getTips.go:71
 msgid "**GNOME makes your desktop!** — [Donate to GNOME](%s)"
 msgstr ""
 "**Votre bureau a été créé par la fondation GNOME !** N'hésitez pas à leur "
 "[faire un don](%s)"
 
-#: getTips.go:66
+#: getTips.go:60
 msgid ""
 "**Games missing icons?** The `SteamGridDB` plugin for Decky Loader makes it "
 "easy to add missing art — [More info](%s)"
@@ -129,14 +129,14 @@ msgstr ""
 "`SteamGridDB` rend accessible l'ajout de couvertures et de bannières pour "
 "vos jeux — [En savoir plus](%s)"
 
-#: getTips.go:102
+#: getTips.go:96
 msgid ""
 "**H.264 hardware acceleration works out of the box** — no tweaks necessary!"
 msgstr ""
 "**L'accélération matérielle H.264 est prise en charge par défaut.** — aucun "
 "réglage nécessaire !"
 
-#: getTips.go:65
+#: getTips.go:59
 msgid ""
 "**Install a game with Lutris?** Right-click on it and `Create steam "
 "shortcut` to easily play it in 󰓓 Steam game mode."
@@ -145,7 +145,7 @@ msgstr ""
 "jeu et sélectionner `Create steam shortcut` pour le lancer facilement depuis "
 "le 󰓓 Steam game mode."
 
-#: getTips.go:38
+#: getTips.go:35
 msgid ""
 "**Installing a Windows game that isn't on Steam?** Lutris is pre-installed "
 "and recommended for better handling of Wine prefixes — [View gaming guide]"
@@ -155,13 +155,13 @@ msgstr ""
 "installé et recommandé pour une meilleure gestion des préfixes Wine — [Voir "
 "le guide](%s)"
 
-#: getTips.go:85
+#: getTips.go:79
 msgid "**KDE powers your desktop!** — [Donate to KDE](%s)"
 msgstr ""
 "**Votre bureau a été créé par la communauté KDE!** N'hésitez pas à leur "
 "[faire un don](%s)"
 
-#: getTips.go:68
+#: getTips.go:62
 msgid ""
 "**Looking for more security?** Tailscale and OpenVPN are built-in, and can "
 "be controlled from 󰓓 Steam game mode by the `Tailscale Control` and "
@@ -171,26 +171,26 @@ msgstr ""
 "peuvent être contrôlé depuis le 󰓓 Steam game mode grâce aux plugins Decky "
 "Loader `Tailscale Control` et `TunnelDeck`."
 
-#: getTips.go:40
+#: getTips.go:37
 msgid "**Looking to set up Waydroid?** — [View our documentation](%s)"
 msgstr ""
 "**Vous souhaitez configurer Waydroid?** — [Voir notre documentation](%s)"
 
-#: getTips.go:25
+#: getTips.go:21
 msgid "**Love Aurora?** Help keep it going by [donating](%s)"
 msgstr "**Vous aimez Aurora ?** Aidez-nous à continuer en [faisant un don](%s)"
 
-#: getTips.go:34
+#: getTips.go:31
 msgid "**Love Bazzite?** Help keep it going by [donating](%s)"
 msgstr ""
 "**Vous aimez Bazzite ?** Aidez-nous à continuer en [faisant un don](%s)"
 
-#: getTips.go:49
+#: getTips.go:46
 msgid "**Love Bluefin?** Help keep it going by [donating](%s)"
 msgstr ""
 "**Vous aimez Bluefin ?** Aidez-nous à continuer en [faisant un don](%s)"
 
-#: getTips.go:42
+#: getTips.go:39
 msgid ""
 "**Managing a large ROM library?** The ROM Properties Page shell extension "
 "comes pre-installed, adding **thumbnails and metadata** to all your files."
@@ -199,7 +199,7 @@ msgstr ""
 "est préinstallée et rajoute des **vignettes et métadonnées** à tous vos "
 "fichiers. "
 
-#: getTips.go:79
+#: getTips.go:73
 msgid ""
 "**Miss the wobbly windows from the early 2000s?** Look for the `Compiz "
 "windows effect` extension in the [Extension Manager](%s)"
@@ -208,7 +208,7 @@ msgstr ""
 "Recherchez l'extension `Compiz windows effect` dans le [Gestionnaire "
 "d'extensions](%s)"
 
-#: getTips.go:73
+#: getTips.go:67
 msgid ""
 "**Missing the hot corner?** Move your mouse to the bottom edge of the screen "
 "to trigger the Activities overview — or re-enable it in Settings."
@@ -217,7 +217,7 @@ msgstr ""
 "bord inférieur de l'écran pour déclencher l’aperçu des activités – ou "
 "réactivez-le dans Paramètres."
 
-#: getTips.go:81
+#: getTips.go:75
 msgid ""
 "**Need more control over your Flatpak apps permissions?** [Check out "
 "Flatseal](%s)"
@@ -225,7 +225,7 @@ msgstr ""
 "**Besoin de plus de contrôle sur vos applis Flatpaks?** [Allez voir Flatseal]"
 "(%s)"
 
-#: getTips.go:26
+#: getTips.go:22
 msgid ""
 "**Need more in-depth technical information?** — Check out the [Aurora docs]"
 "(%s)"
@@ -233,7 +233,7 @@ msgstr ""
 "Pour plus d'informations techniques, jetez un coup d'œil à la [documentation "
 "d'Aurora](%s)"
 
-#: getTips.go:105
+#: getTips.go:99
 msgid ""
 "**Need to manage your Flatpak repositories and data?** — [Check out "
 "Warehouse](%s)"
@@ -241,7 +241,7 @@ msgstr ""
 "**Besoin de plus de contrôle sur vos données et vos sources Flatpak?** — "
 "[Allez voir Warehouse](%s)"
 
-#: getTips.go:103
+#: getTips.go:97
 msgid ""
 "**No Flatpak available?** Gear Lever is pre-installed for easy AppImage "
 "management — [Get it here](%s)"
@@ -249,7 +249,7 @@ msgstr ""
 "**Aucun Flatpak disponible?** Levier de vitesse est pré-installé et permet "
 "de gérer les AppImages facilement — [Voir l'appli](%s)"
 
-#: getTips.go:106
+#: getTips.go:100
 msgid ""
 "**Open a folder with Clapgrep** for super powerful search — [Install it here]"
 "(%s)"
@@ -257,7 +257,7 @@ msgstr ""
 "L'appli **Clapgrep vous permet d'ouvrir vos dossiers** et de faire des "
 "**recherches approfondies** — [Voir l'appli](%s)"
 
-#: getTips.go:117
+#: getTips.go:111
 msgid ""
 "**Performance profiling is built-in** — try `sysprof`, `bpftrace`, or `perf` "
 "to dig into what your system is doing."
@@ -265,7 +265,7 @@ msgstr ""
 "**Des outils de profilage sont intégrés** — essayez `sysprof`, `bpftrace` ou "
 "`perf` pour comprendre ce que fait votre système en profondeur."
 
-#: getTips.go:37
+#: getTips.go:34
 msgid ""
 "**Prefer Distrobox over rpm-ostree for installing packages** — It's safer "
 "and easier to manage. `ujust distrobox` gets you started! — [More info](%s)"
@@ -274,7 +274,7 @@ msgstr ""
 "paquets** — C'est plus sûr et plus simple à entretenir. La commande `ujust "
 "distrobox` est là pour bien démarrer! — [En savoir plus](%s)"
 
-#: getTips.go:101
+#: getTips.go:95
 msgid ""
 "**Support indie game preservation and OSS developers!** — [Join Hit Save!'s "
 "Patreon](%s)"
@@ -282,13 +282,13 @@ msgstr ""
 "**Soutenez la préservation de jeux indépendants et des développeurs de "
 "l'Open-Source !** — [Rejoignez le Patreon de Hit Save!](%s)"
 
-#: getTips.go:104
+#: getTips.go:98
 msgid "**Tailscale is included**, check out [their docs](%s)"
 msgstr ""
 "**Tailscale est inclus dans votre système**, n'hésitez pas à jeter un coup "
 "d'œil à [leur documentation](%s)"
 
-#: getTips.go:69
+#: getTips.go:63
 msgid ""
 "**Using a handheld that doesn't have enough buttons?** 󰓓 Steam game mode now "
 "supports touch gestures to slide out the menus, thanks to [ChimeraOS](%s)"
@@ -297,7 +297,7 @@ msgstr ""
 "mode prend en charge les gestes tactiles pour faire glisser les menus, grâce "
 "à [ChimeraOS](%s)"
 
-#: getTips.go:88
+#: getTips.go:82
 msgid ""
 "**Want more control over Flatpak app permissions?** Find them under "
 "`Security and Privacy → App Permissions` in System Settings."
@@ -306,7 +306,7 @@ msgstr ""
 "vous avez un page dédiée dans la section `Sécurité & Confidentialité → "
 "Permissions des applications` dans la configuration du système"
 
-#: getTips.go:78
+#: getTips.go:72
 msgid ""
 "**Want to control your device from your phone?** Look for the `GSConnect` "
 "extension in the [Extension Manager](%s)"
@@ -314,7 +314,7 @@ msgstr ""
 "**Vous souhaitez lier votre appareil avec votre téléphone ?** Recherchez "
 "l'extension `GSConnect` dans le [Gestionnaire d'extensions](%s)"
 
-#: getTips.go:87
+#: getTips.go:81
 msgid ""
 "**Want to control your device from your phone?** Then the KDE Connect app is "
 "made for you — [More info](%s)"
@@ -322,7 +322,7 @@ msgstr ""
 "**Vous souhaitez lier votre appareil avec votre téléphone ?** Alors "
 "l'application KDE Connect est faite pour vous — [En savoir plus](%s)"
 
-#: getTips.go:45
+#: getTips.go:42
 msgid ""
 "**Want to customize and theme your desktop?** — [Follow our guide](%s) to "
 "get started."
@@ -330,7 +330,7 @@ msgstr ""
 "**Envie de personnaliser et de changer le thème de votre bureau ?** — [Voir "
 "le guide](%s)"
 
-#: getTips.go:63
+#: getTips.go:57
 msgid ""
 "**Want to install Decky Loader?** There's a `ujust` command for that! `ujust "
 "setup-decky install`"
@@ -338,15 +338,15 @@ msgstr ""
 "La commande `ujust setup-decky install` vous permet d'installer Decky Loader "
 "sur votre système !"
 
-#: getTips.go:128
+#: getTips.go:122
 msgid ""
-"**Your distro is valid!** It's your computer, choose what works best for "
-"you. :D"
+"**Your distro is valid!** It's your computer, choose what works best for you."
+"👍"
 msgstr ""
 "**Votre distribution est valide!** C'est votre ordinateur, choisissez ce qui "
-"vous convient le mieux. :D"
+"vous convient le mieux. 👍"
 
-#: getTips.go:55
+#: getTips.go:52
 msgid ""
 "Almost all the wallpapers are made by **Jacob Schnurr** — [Check out his "
 "Etsy](%s)"
@@ -354,7 +354,16 @@ msgstr ""
 "Presque tous les fonds d'écran sont réalisés par **Jacob Schnurr** — [Voir "
 "sa page Etsy](%s)"
 
-#: getTips.go:39
+#: getTips.go:27 getTips.go:53
+msgid ""
+"Are you a developer? Then the `Developer Experience` is made for you! — "
+"[Check it out](%s)"
+msgstr ""
+"Êtes-vous développeur  ? Si c'est le cas, l'`Experience Développeur\"` est fai"
+"te "
+"pour vous ! —  [En savoir plus](%s) "
+
+#: getTips.go:36
 msgid ""
 "Bazzite uses BTRFS for internal and external drives (including MicroSD). "
 "Note: **NTFS and exFAT are not supported.**"
@@ -362,7 +371,7 @@ msgstr ""
 "Bazzite utilise BTRFS pour les disques internes et externes (y compris "
 "MicroSD). Note: **NTFS et exFAT ne sont pas pris en charge.**"
 
-#: getTips.go:41
+#: getTips.go:38
 msgid ""
 "Bazzite uses ZSTD-compressed BTRFS with automatic deduplication -> **meaning "
 "more storage space for your games.**"
@@ -370,15 +379,15 @@ msgstr ""
 "Bazzite utilise un BTRFS compressé avec ZSTD et avec déduplication "
 "automatique -> **ce qui veut dire plus d'espace de stockage pour vos jeux.**"
 
-#: main.go:141
+#: main.go:140
 msgid "Bluesky"
 msgstr "Bluesky"
 
-#: main.go:85
+#: main.go:84
 msgid "Boot Status"
 msgstr "État de démarrage"
 
-#: getTips.go:112
+#: getTips.go:106
 msgid ""
 "Check out `ujust bbrew` for a curated selection of IDEs, development and "
 "command line apps."
@@ -386,51 +395,51 @@ msgstr ""
 "La commande `ujust bbrew` permet d'afficher une sélection d'IDEs, d'applis "
 "de développement et de ligne de commande."
 
-#: main.go:96
+#: main.go:95
 msgid "Command"
 msgstr "Commande"
 
-#: main.go:96
+#: main.go:95
 msgid "Description"
 msgstr "Description"
 
-#: main.go:137
+#: main.go:136
 msgid "Discord"
 msgstr "Discord"
 
-#: main.go:135
+#: main.go:134
 msgid "Discuss"
 msgstr "Discussions"
 
-#: main.go:133
+#: main.go:132
 msgid "Documentation"
 msgstr "Documentation"
 
-#: getTips.go:27 getTips.go:51
+#: getTips.go:23 getTips.go:48
 msgid "Don't forget to check the [release notes](%s)"
 msgstr "N'oubliez pas de consulter les [notes de version](%s)"
 
-#: main.go:145
+#: main.go:144
 msgid "Donate"
 msgstr "Faire un don"
 
-#: main.go:106
+#: main.go:105
 msgid "Enable terminal bling"
 msgstr "Active le bling du terminal"
 
-#: main.go:55
+#: main.go:182
 msgid "Failed to disable the motd."
 msgstr "Échec de la désactivation du motd."
 
-#: main.go:37
+#: main.go:173
 msgid "Failed to enable the motd."
 msgstr "Échec de l'activation du motd."
 
-#: main.go:87
+#: main.go:86
 msgid "Healthy"
 msgstr "Sain"
 
-#: getTips.go:114
+#: getTips.go:108
 msgid ""
 "Install `tealdeer` with Homebrew to have a basic rundown on commands for "
 "your tools."
@@ -438,40 +447,40 @@ msgstr ""
 "Installez `tealdeer` avec Homebrew pour avoir un aperçu de base de vos "
 "outils."
 
-#: main.go:62
+#: main.go:61
 msgid "Invalid command"
 msgstr "Commande invalide"
 
-#: main.go:102
+#: main.go:101
 msgid "List all available commands"
 msgstr "Liste toutes les commandes disponibles"
 
-#: main.go:104
+#: main.go:103
 msgid "Manage command line packages"
 msgstr "Gère les paquets de ligne de commande"
 
-#: getTips.go:80
+#: getTips.go:74
 msgid "Manage desktop extensions with [Extension Manager](%s)"
 msgstr "Gérez vos extensions avec le [Gestionnaire d'extensions](%s)"
 
-#: main.go:112
+#: main.go:111
 msgid "Manually update the system"
 msgstr "Met à jour le système manuellement"
 
-#: main.go:143
+#: main.go:142
 msgid "Mastodon"
 msgstr "Mastodon"
 
-#: main.go:139
+#: main.go:138
 msgid "Matrix"
 msgstr "Matrix"
 
-#: getTips.go:127
-msgid "Maybe **the real %s** was the friends we made along the way"
+#: getTips.go:121
+msgid "Maybe **the real %s** was the friends we made along the way."
 msgstr ""
-"Peut-être que **le vrai %s** était les amis qu'on s'est faits en chemin"
+"Peut-être que **le vrai %s** était les amis qu'on s'est faits en chemin."
 
-#: getTips.go:50
+#: getTips.go:47
 msgid ""
 "Need more in-depth technical information? — Check out the [Bluefin "
 "Administrator's Guide](%s)"
@@ -479,7 +488,7 @@ msgstr ""
 "Pour plus d'informations techniques, jetez un coup d'œil au [guide "
 "d'administrateur Bluefin](%s)"
 
-#: getTips.go:99
+#: getTips.go:93
 msgid ""
 "Packages installed in Distrobox can be exported to appear like any other "
 "application — [View documentation](%s)"
@@ -487,7 +496,7 @@ msgstr ""
 "Les paquets installés dans Distrobox peuvent être exportées pour ressembler "
 "à n'importe quelle autre appli. — [Voir la documentation](%s)"
 
-#: getTips.go:118
+#: getTips.go:112
 msgid ""
 "Prefer `docker compose` for multi-container setups where a single "
 "devcontainer isn't enough."
@@ -495,7 +504,7 @@ msgstr ""
 "Utilisez `docker compose` pour les configurations multi-conteneur si les "
 "devcontainers ne suffisent pas"
 
-#: getTips.go:44
+#: getTips.go:41
 msgid ""
 "ProtonPlus can be used to install and update custom versions of Proton. We "
 "recommend Proton-GE for problematic Steam games and Wine-GE for all other "
@@ -505,11 +514,11 @@ msgstr ""
 "custom de Proton. Nous recommandons Proton-GE pour les jeux Steam "
 "problématiques et Wine-GE pour les autres jeux non-Steam."
 
-#: main.go:131
+#: main.go:130
 msgid "Report an issue"
 msgstr "Signaler un problème"
 
-#: getTips.go:98
+#: getTips.go:92
 msgid ""
 "Switch shells safely: change your shell in Terminal settings instead of "
 "system-wide — [Read more](%s)"
@@ -517,14 +526,14 @@ msgstr ""
 "Changez de shells en toute sécurité: changez votre shell dans les paramètres "
 "du terminal plutôt qu'à l'échelle du système — [En savoir plus](%s)"
 
-#: getTips.go:97
+#: getTips.go:91
 msgid ""
 "The **Bazaar** app store is made by **Kolunmi** — [Support their work](%s)"
 msgstr ""
 "La logithèque **Bazaar** est réalisée par **Kolunmi** — [Soutenir leur "
 "travail](%s)"
 
-#: getTips.go:54
+#: getTips.go:51
 msgid ""
 "The **Gradia Capture** extension is made by **Alexander Vanhee** — [Support "
 "their work](%s)"
@@ -532,15 +541,15 @@ msgstr ""
 "L'extension **Gradia Capture** est réalisée par **Alexander Vanhee** — "
 "[Soutenir leur travail](%s)"
 
-#: getTips.go:86
+#: getTips.go:80
 msgid "The KDE mascot is a dragon named `Konqi`!"
 msgstr "La mascotte de KDE est un dragon qui s'appelle `Konqi` !"
 
-#: getTips.go:126
+#: getTips.go:120
 msgid "The Linux penguin is named `Tux`!"
 msgstr "Le pingouin de Linux s'appelle `Tux`!"
 
-#: getTips.go:43
+#: getTips.go:40
 msgid ""
 "The `bazzite-rollback-helper` command can guide you for rolling back or "
 "rebasing to older Bazzite builds — [More info](%s)"
@@ -549,37 +558,37 @@ msgstr ""
 "arrière ou basculer vers des versions plus anciennes de Bazzite — [En savoir "
 "plus](%s)"
 
-#: main.go:58
+#: main.go:185
 msgid "The motd has been disabled."
 msgstr "Le motd a été désactivé."
 
-#: main.go:40
+#: main.go:176
 msgid "The motd has been enabled."
 msgstr "Le motd a été activé."
 
-#: main.go:50
+#: main.go:54
 msgid "The motd is already disabled."
 msgstr "Le motd est déjà désactivé."
 
-#: main.go:43
+#: main.go:47
 msgid "The motd is already enabled."
 msgstr "Le motd est déjà activé."
 
-#: getTips.go:28
+#: getTips.go:24
 msgid "The wallpapers are made by **Chandeleer** — [Support their work](%s)"
 msgstr ""
 "Les fonds d'écran sont réalisés par **Chandeleer** — [Soutenir leur travail]"
 "(%s)"
 
-#: main.go:108
+#: main.go:107
 msgid "Toggle this banner on/off"
 msgstr "Active/désactive ce panneau"
 
-#: main.go:80
+#: main.go:79
 msgid "Unknown system"
 msgstr "Système inconnu"
 
-#: getTips.go:52
+#: getTips.go:49
 msgid ""
 "Use DistroShelf to run apps from other distros in isolated containers — no "
 "commitment required — [Check it out](%s)"
@@ -587,11 +596,11 @@ msgstr ""
 "Utilisez Distroshelf pour lancer des applis d'autres distributions dans des "
 "conteneurs isolés — aucun engagement n'est requis — [Aller voir](%s)"
 
-#: getTips.go:92
+#: getTips.go:86
 msgid "Use `Ctrl + Alt + T` to quickly open a terminal."
 msgstr "Appuyez sur `Ctrl + Alt + T` pour ouvrir un terminal rapidement."
 
-#: getTips.go:94
+#: getTips.go:88
 msgid ""
 "Use `brew search` and `brew install` to install packages. %s will take care "
 "of the updates automatically."
@@ -599,7 +608,7 @@ msgstr ""
 "Les commandes `brew search` et `brew install` vous permettent de rechercher "
 "et d'installer des paquets. %s les mettra à jour automatiquement."
 
-#: getTips.go:29 getTips.go:53
+#: getTips.go:25 getTips.go:50
 msgid ""
 "Use `ujust rebase-helper` to roll back to a specific image or switch "
 "channels — [See the docs for details](%s)"
@@ -608,19 +617,19 @@ msgstr ""
 "antérieure de votre système en cas de soucis — Pour plus de détails, [lisez "
 "la documentation](%s)"
 
-#: main.go:110
+#: main.go:109
 msgid "View system information"
 msgstr "Affiche les informations système"
 
-#: main.go:129
+#: main.go:128
 msgid "Website"
 msgstr "Site Web"
 
-#: main.go:76
+#: main.go:75
 msgid "Welcome to %s"
 msgstr "Bienvenue sur %s"
 
-#: getTips.go:95
+#: getTips.go:89
 msgid ""
 "`ujust --choose` will show you each ujust shortcut and the script they're "
 "running."
@@ -628,7 +637,7 @@ msgstr ""
 "La commande `ujust --choose` affiche chaque commande `ujust` et les scripts "
 "qu'ils utilisent."
 
-#: getTips.go:115
+#: getTips.go:109
 msgid ""
 "`ujust bbrew` and select `k8s-tools` that will get you started with "
 "Kubernetes development tools like `kind` and `kubectl`."
@@ -636,7 +645,7 @@ msgstr ""
 "La section `k8s-tools` de `ujust bbrew` vous affiche notre sélection "
 "d'outils Kubernetes pour bien commencer, comme `kind` et `kubectl`."
 
-#: getTips.go:96
+#: getTips.go:90
 msgid ""
 "`ujust changelogs` shows a summary of the package changes since the last "
 "update."
@@ -644,7 +653,7 @@ msgstr ""
 "La commande `ujust changelogs` affiche un résumé des changements depuis la "
 "dernière mise à jour."
 
-#: getTips.go:113
+#: getTips.go:107
 msgid ""
 "`ujust jetbrains-toolbox` installs JetBrains tools in your home directory, "
 "all ready to go!"
@@ -652,7 +661,7 @@ msgstr ""
 "La commande `ujust jetbrains-toolbox` permet d'installer les outils "
 "JetBrains dans votre dossier personnel, tous prêts à l'utilisation!"
 
-#: getTips.go:64
+#: getTips.go:58
 msgid ""
 "󰓓 The Steam game mode updater also updates Bazzite, Flatpak apps, and "
 "Distrobox containers. The changelog shown is from the Steam client."
