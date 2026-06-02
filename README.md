@@ -201,8 +201,10 @@ Currently, there are the following presets available:
 
 - `aurora`
 - `bazzite`
+- `bazzite-deck`
+- `bazzite-gnome`
 - `bluefin`
-- `deck`
+- `default`
 - `gnome`
 - `kde`
 - `ublue`
