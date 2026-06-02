@@ -6,15 +6,11 @@ import (
 	"github.com/leonelquinteros/gotext"
 )
 
-func getRandomTip(customTips []string, preset ...string) string {
+func getRandomTip(l *gotext.Locale, customTips []string, preset ...string) string {
 
 	if len(preset) == 0 && len(customTips) == 0 {
 		return ""
 	}
-
-	locale := detectLocale(localesFS)
-	l := gotext.NewLocaleFSWithPath(locale, localesFS, "locales")
-	l.AddDomain("default")
 
 	tips := []string{}
 
@@ -28,6 +24,7 @@ func getRandomTip(customTips []string, preset ...string) string {
 				l.Get("The wallpapers are made by **Chandeleer** — [Support their work](%s)", "https://ko-fi.com/chandeleer"),
 				l.Get("Use `ujust rebase-helper` to roll back to a specific image or switch channels — [See the docs for details](%s)", "https://docs.getaurora.dev/guides/release-streams/#switching-between-streams"),
 				l.Get("**Are you into dinosaurs?** Then try `ujust toggle-dinosaurs`."),
+				l.Get("Are you a developer? Then the `Developer Experience` is made for you! — [Check it out](%s)", "https://docs.getaurora.dev/dx/aurora-dx-intro"),
 			}...)
 		case "bazzite":
 			tips = append(tips, []string{
@@ -53,11 +50,8 @@ func getRandomTip(customTips []string, preset ...string) string {
 				l.Get("Use `ujust rebase-helper` to roll back to a specific image or switch channels — [See the docs for details](%s)", "https://docs.projectbluefin.io/administration/#switching-between-streams"),
 				l.Get("The **Gradia Capture** extension is made by **Alexander Vanhee** — [Support their work](%s)", "https://ko-fi.com/alexandervanhee"),
 				l.Get("Almost all the wallpapers are made by **Jacob Schnurr** — [Check out his Etsy](%s)", "https://www.etsy.com/shop/JSchnurrCommissions"),
+				l.Get("Are you a developer? Then the `Developer Experience` is made for you! — [Check it out](%s)", "https://docs.projectbluefin.io/bluefin-dx/"),
 			}...)
-		// case "bluefin-dx":
-		// 	tips = append(tips, []string{
-		// 		l.Get("VSCode comes with the `devcontainers` extension pre-installed — perfect for isolated, reproducible dev environments."),
-		// 	}...)
 		case "bazzite-deck":
 			tips = append(tips, []string{
 				l.Get("**Want to install Decky Loader?** There's a `ujust` command for that! `ujust setup-decky install`"),
@@ -124,8 +118,8 @@ func getRandomTip(customTips []string, preset ...string) string {
 		case "default":
 			tips = append(tips, []string{
 				l.Get("The Linux penguin is named `Tux`!"),
-				l.Get("Maybe **the real %s** was the friends we made along the way", getOSName()),
-				l.Get("**Your distro is valid!** It's your computer, choose what works best for you. :D"),
+				l.Get("Maybe **the real %s** was the friends we made along the way.", getOSName()),
+				l.Get("**Your distro is valid!** It's your computer, choose what works best for you.👍"),
 			}...)
 		}
 	}

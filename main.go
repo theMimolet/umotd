@@ -29,15 +29,19 @@ func main() {
 			fmt.Println(VERSION)
 			return
 
+		case "toggle":
+			if isDisabled {
+				enableMotd(l)
+				return
+			} else {
+				disableMotd(l)
+				return
+			}
+
 		// Enables the motd
 		case "enable":
 			if isDisabled {
-				err := os.Remove(getDisabledFile())
-				if err != nil {
-					fmt.Println(l.Get("Failed to enable the motd."))
-					return
-				}
-				fmt.Println(l.Get("The motd has been enabled."))
+				enableMotd(l)
 				return
 			} else {
 				fmt.Println(l.Get("The motd is already enabled."))
@@ -50,12 +54,7 @@ func main() {
 				fmt.Println(l.Get("The motd is already disabled."))
 				return
 			} else {
-				_, err := os.Create(getDisabledFile())
-				if err != nil {
-					fmt.Println(l.Get("Failed to disable the motd."))
-					return
-				}
-				fmt.Println(l.Get("The motd has been disabled."))
+				disableMotd(l)
 				return
 			}
 		default:
@@ -118,7 +117,7 @@ func main() {
 	}
 
 	// Gets a random tip
-	in += getRandomTip(cfg.Tips, cfg.TipsPresets...) + "\n\n"
+	in += getRandomTip(l, cfg.Tips, cfg.TipsPresets...) + "\n\n"
 
 	// Gets the links
 	if len(cfg.Links) > 0 {
@@ -166,4 +165,22 @@ func main() {
 
 	// Renders the output
 	fmt.Print(out)
+}
+
+func enableMotd(l *gotext.Locale) {
+	err := os.Remove(getDisabledFile())
+	if err != nil {
+		fmt.Println(l.Get("Failed to enable the motd."))
+		return
+	}
+	fmt.Println(l.Get("The motd has been enabled."))
+}
+
+func disableMotd(l *gotext.Locale) {
+	_, err := os.Create(getDisabledFile())
+	if err != nil {
+		fmt.Println(l.Get("Failed to disable the motd."))
+		return
+	}
+	fmt.Println(l.Get("The motd has been disabled."))
 }

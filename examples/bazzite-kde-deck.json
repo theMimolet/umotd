@@ -5,7 +5,7 @@
       "desc": "cmd_list"
     },
     {
-      "cmd": "ujust toggle-user-motd",
+      "cmd": "umotd toggle",
       "desc": "motd_toggle"
     },
     {
@@ -36,6 +36,5 @@
     }
   ],
   "prefix": "󰊴 ",
-  "tips-presets": ["ublue", "bazzite", "kde", "deck"],
-  "use-accent-color": true
+  "tips-presets": ["ublue", "bazzite", "kde", "deck"]
 }

@@ -31,8 +31,7 @@ type Link struct {
 func defaultConfig() Config {
 	return Config{
 		Commands: []Command{
-			{Cmd: "ujust --choose", Desc: "cmd_list"},
-			{Cmd: "ujust toggle-user-motd", Desc: "motd_toggle"},
+			{Cmd: "umotd toggle", Desc: "motd_toggle"},
 			{Cmd: "fastfetch", Desc: "sys_info"},
 			{Cmd: "brew help", Desc: "cli_pkg"},
 		},

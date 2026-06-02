@@ -5,7 +5,7 @@
       "desc": "cmd_list"
     },
     {
-      "cmd": "ujust toggle-user-motd",
+      "cmd": "umotd toggle",
       "desc": "motd_toggle"
     },
     {
