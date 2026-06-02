@@ -73,7 +73,7 @@ func main() {
 	cfg := getConfig()
 
 	// Gets the image info and OS name
-	in := "# " + l.Get("Welcome to %s", getOSName()) + " " + cfg.Symbol + "\n"
+	in := "# " + cfg.Prefix + l.Get("Welcome to %s", getOSName()) + cfg.Suffix + "\n"
 	if imageInfo := getImageInfo(cfg.InfoFile); imageInfo.ImageRef != "" || imageInfo.ImageTag != "" {
 		in += " 󱋩 `" + imageInfo.ImageRef + ":" + imageInfo.ImageTag + "` \n"
 	} else if isBootcSystem() {

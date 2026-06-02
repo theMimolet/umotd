@@ -31,7 +31,7 @@
       "url": "https://docs.projectbluefin.io/"
     }
   ],
-  "symbol": "󱍢",
+  "prefix": "󱍢 ",
   "tips-presets": ["bluefin", "gnome", "ublue", "ublue-dev"],
   "use-accent-color": true
 }

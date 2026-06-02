@@ -10,7 +10,8 @@ type Config struct {
 	Commands       []Command `json:"commands"`
 	InfoFile       string    `json:"info-file"`
 	Links          []Link    `json:"links"`
-	Symbol         string    `json:"symbol"`
+	Prefix         string    `json:"prefix"`
+	Suffix         string    `json:"suffix"`
 	Tips           []string  `json:"tips"`
 	TipsPresets    []string  `json:"tips-presets"`
 	UseAccentColor bool      `json:"use-accent-color"`
@@ -40,7 +41,7 @@ func defaultConfig() Config {
 			{Name: "discord", URL: "https://discord.com/invite/8RZGC3uFzA"},
 			{Name: "mastodon", URL: "https://fosstodon.org/@UniversalBlue"},
 		},
-		Symbol: "!",
+		Suffix: " !",
 		TipsPresets: []string{
 			"default",
 		},

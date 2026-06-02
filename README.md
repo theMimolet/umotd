@@ -20,9 +20,20 @@ Here are features that are planned for the future:
 
 ### Install it with Homebrew
 
+If you have Homebrew installed on your system, you can install Umotd with the following command:
 ```
 brew install themimolet/tap/umotd
 ```
+
+It's the recommended way to install Umotd on your system, as it will automatically update via Homebrew.
+
+### Download it from the releases page
+
+You can download the latest release from the [releases page](https://github.com/theMimolet/umotd/releases).
+
+You can then rename it to `umotd` and place it in your usual `/bin` folder.
+
+> Note: You won't receive automatic updates, you will have to download Umotd at each new release.
 
 ### Compile from source
 
@@ -76,7 +87,7 @@ LANGUAGE=fr ./umotd
 LANGUAGE=fr go run .
 ```
 
-## How to configure
+## How to configure Umotd
 
 Umotd has a default built-in look, but it's actually made to be highly customizable.
 If you're managing a custom system, it might interest you.
@@ -92,7 +103,7 @@ They have specific names / codes that are used to get translated strings.
 
 Any other option not listed won't be translated.
 
-### Decomposing the config file
+### Breaking down the configuration file
 
 Here's a breakdown of the config file options - there's also the example folder if you want to see concrete use cases.
 
@@ -179,16 +190,21 @@ There are unique names you can use to get a translated name for the link :
 }
 ```
 
-#### Symbol
+#### Prefix and Suffix
 
-This option allows to customize the symbol used in the MOTD.
-
-It's a string (generally a single character) that will be used to suffix the welcome message of the MOTD.
+These options allow to customize the prefix and suffix of the welcome message.
 
 ```json
 {
-  "symbol": "!"
+  "prefix": "> ",
+  "suffix": " !"
 }
+```
+
+Example:
+
+```
+`> Welcome to UBlue !`
 ```
 
 #### Tips

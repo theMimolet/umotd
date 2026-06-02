@@ -35,7 +35,7 @@
       "url": "https://bluesky.bazzite.gg/"
     }
   ],
-  "symbol": "󰊴",
+  "prefix": "󰊴 ",
   "tips-presets": ["ublue", "bazzite", "kde", "deck"],
   "use-accent-color": true
 }
