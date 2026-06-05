@@ -94,10 +94,10 @@ func GetRandomTip(l *gotext.Locale, customTips []string, preset ...string) strin
 				l.Get("*%s isn't a distro*, this is a custom image built on %s Fedora Atomic Desktop technology — [View our mission](%s)", GetOSName(), GetSymbol("fedora"), "https://ublue.it/mission/"),
 				l.Get("**Support indie game preservation and OSS developers!** — [Join Hit Save!'s Patreon](%s)", "https://patreon.com/hitsave"),
 				l.Get("**H.264 hardware acceleration works out of the box** — no tweaks necessary!"),
-				l.Get("**No Flatpak available?** Gear Lever is pre-installed for easy AppImage management — [Get it here](%s)", "appstream://it.mijorus.gearlever"),
+				l.Get("**No Flatpak available?** Gear Lever is perfect for easy AppImage management — [Check it out](%s)", "appstream://it.mijorus.gearlever"),
 				l.Get("**Tailscale is included**, check out [their docs](%s)", "https://tailscale.com/kb/1017/install"),
 				l.Get("**Need to manage your Flatpak repositories and data?** — [Check out Warehouse](%s)", "appstream://io.github.flattool.Warehouse"),
-				l.Get("**Open a folder with Clapgrep** for super powerful search — [Install it here](%s)", "appstream://de.leopoldluley.Clapgrep"),
+				l.Get("**Clapgrep lets you do super powerful searches** within your folders — [Check it out](%s)", "appstream://de.leopoldluley.Clapgrep"),
 				l.Get("**Do you love our wallpapers?** Check out the full [Universal Blue artwork collection](%s)", "https://docs.projectbluefin.io/artwork/"),
 			}...)
 		case "ublue-dev":
