@@ -32,6 +32,6 @@
     }
   ],
   "prefix": "󱍢 ",
-  "tips-presets": ["bluefin", "gnome", "ublue", "ublue-dev"],
+  "tips-presets": ["bluefin", "gnome", "ublue", "dev"],
   "use-accent-color": true
 }

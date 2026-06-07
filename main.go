@@ -12,7 +12,7 @@ import (
 	"github.com/leonelquinteros/gotext"
 )
 
-const VERSION = "0.2.1"
+const VERSION = "0.3"
 
 //go:embed all:locales
 var localesFS embed.FS
