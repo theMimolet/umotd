@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 
+	"umotd/internal/args"
 	"umotd/internal/config"
 	"umotd/internal/locale"
 	"umotd/internal/render"
@@ -73,8 +74,9 @@ func main() {
 		case "config-path":
 			fmt.Println(config.GetPath())
 			return
-		case "add":
-
+		case "tips-preset":
+			args.TipsPresetCommands(os.Args[2:], l)
+			return
 		default:
 			fmt.Println(l.Get("Invalid command"))
 			return
