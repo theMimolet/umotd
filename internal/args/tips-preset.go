@@ -8,6 +8,7 @@ import (
 
 func TipsPresetCommands(args []string, l *gotext.Locale) {
 	if len(args) < 1 {
+		println(l.Get("No command specified."))
 		return
 	}
 	switch args[0] {
@@ -18,9 +19,8 @@ func TipsPresetCommands(args []string, l *gotext.Locale) {
 	case "remove":
 		RemoveTipsPresets(args[1:], l)
 	default:
-		for _, arg := range args {
-			println(arg)
-		}
+		println(l.Get("Command not recognized. Try 'list', 'add', or 'remove'."))
+		return
 	}
 }
 
@@ -37,7 +37,10 @@ func AddTipsPresets(args []string, l *gotext.Locale) {
 		return
 	}
 	for _, arg := range args {
-		config.AddTipsPreset(arg, l)
+		if err := config.AddTipsPreset(arg, l); err != nil {
+			println(l.Get("Failed to add preset: %s", arg))
+			println(l.Get("Error ~> %s", err.Error()))
+		}
 	}
 }
 
@@ -47,6 +50,9 @@ func RemoveTipsPresets(args []string, l *gotext.Locale) {
 		return
 	}
 	for _, arg := range args {
-		config.RemoveTipsPreset(arg, l)
+		if err := config.RemoveTipsPreset(arg, l); err != nil {
+			println(l.Get("Failed to remove preset: %s", arg))
+			println(l.Get("Error ~> %s", err.Error()))
+		}
 	}
 }
