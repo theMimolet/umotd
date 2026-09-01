@@ -23,14 +23,26 @@ translate lang:
     echo "Checking dependencies..."
     which go >/dev/null 2>&1 || (echo "You don't have \`go\` installed :(" && exit 1)
     which gettext >/dev/null 2>&1 || (echo "You don't have \`gettext\` installed :(" && exit 1)
-    [ -f "$(go env GOPATH)/bin/xgotext" ] || (go install github.com/leonelquinteros/gotext/cli/xgotext@latest || (echo "An error occurred while installing \`xgotext\` :(" && exit 1))
+    which msgmerge >/dev/null 2>&1 || (echo "You don't have \`msgmerge\` installed :(" && exit 1)
     echo "All dependencies are installed ✅️"
+
+    # Function to extract translations from Go files
+
+    extract_translations() {
+        mkdir -p locales/temp
+        find . -type f -name '*.go' -not -path './vendor/*' -print0 |
+            xargs -0 xgettext \
+                --language=Go \
+                --from-code=UTF-8 \
+                --keyword=Get \
+                --output=locales/temp/default.pot
+    }
 
     # If the language already exists, update it
 
     if [ -f "locales/{{lang}}/default.po" ]; then \
         echo "Translation file for \"{{lang}}\" already exists. Updating..." ;\
-        $(go env GOPATH)/bin/xgotext -in . -out locales/temp || (echo "An error occurred while running \`xgotext\` :(" && rm -rf locales/temp && exit 1) ;\
+        extract_translations ;\
         msgmerge --update locales/"{{lang}}"/default.po locales/temp/default.pot || (echo "An error occurred while running \`msgmerge\` :(" && rm -rf locales/temp && exit 1);\
         rm -rf locales/temp;\
         rm -f locales/"{{lang}}"/default.po~;\
@@ -42,7 +54,7 @@ translate lang:
 
     echo "Translation file for \"{{lang}}\" do not exist. Creating new file..."
     mkdir -p locales/"{{lang}}"
-    $(go env GOPATH)/bin/xgotext -in . -out locales/temp || (echo "An error occurred while running \`xgotext\` :(" && rm -rf locales/temp && exit 1)
+    extract_translations
     cp locales/temp/default.pot locales/"{{lang}}"/default.po
     rm -rf locales/temp
     echo "Translation file generated. You can edit them in locales/{{lang}}/default.po"
