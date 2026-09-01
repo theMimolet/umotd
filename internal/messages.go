@@ -14,49 +14,49 @@ func GetRandomMessage(l *gotext.Locale, tags []string) string {
 	// General messages accross all Universal Blue systems
 
 	messages = append(messages, []string{
-		l.Get("Use `Ctrl + Alt + T` to quickly open a terminal."),
-		l.Get("**Did an update break something?** You can roll back with `bootc rollback`."),
-		l.Get("Use `brew search` and `brew install` to install packages. %s will take care of the updates automatically.", GetOSName()),
-		l.Get("`ujust --choose` will show you each ujust shortcut and the script they're running."),
-		l.Get("`ujust changelogs` shows a summary of the package changes since the last update."),
-		l.Get("The **Bazaar** app store is made by **Kolunmi** — [Support their work](%s)", "https://ko-fi.com/kolunmi"),
-		l.Get("Switch shells safely: change your shell in Terminal settings instead of system-wide — [Read more](%s)", "https://tim.siosm.fr/blog/2023/12/22/dont-change-defaut-login-shell/"),
-		l.Get("Packages installed in Distrobox can be exported to appear like any other application — [View documentation](%s)", "https://distrobox.it/usage/distrobox-export/"),
-		l.Get("*%s isn't a distro*, this is a custom image built on  Fedora Atomic Desktop technology — [View our mission](%s)", GetOSName(), "https://ublue.it/mission/"),
-		l.Get("**Support indie game preservation and OSS developers!** — [Join Hit Save!'s Patreon](%s)", "https://patreon.com/hitsave"),
-		l.Get("**H.264 hardware acceleration works out of the box** — no tweaks necessary!"),
-		l.Get("**No Flatpak available?** Gear Lever is perfect for easy AppImage management — [Check it out](%s)", "appstream://it.mijorus.gearlever"),
-		l.Get("**Tailscale is included**, check out [their docs](%s)", "https://tailscale.com/kb/1017/install"),
-		l.Get("**Need to manage your Flatpak repositories and data?** — [Check out Warehouse](%s)", "appstream://io.github.flattool.Warehouse"),
-		l.Get("**Clapgrep lets you do super powerful searches** within your folders — [Check it out](%s)", "appstream://de.leopoldluley.Clapgrep"),
-		l.Get("**Do you love our wallpapers?** Check out the full [Universal Blue artwork collection](%s)", "https://docs.projectbluefin.io/artwork/"),
-		l.Get("`sl` makes a Steam locomotive appear in your terminal! Install it with `brew install sl`"), // idea: bigredsponge
-		l.Get("**Are you a developer?** — Check out our `Developer Mode` that includes container tooling, virtualization, and many IDEs at `ujust devmode`"),
-		l.Get("**Do you like servers?** Then check out [ucore](%s)", "https://github.com/ublue-os/ucore"),
-		l.Get("Check out **BBrew** with `ujust bbrew` for a simplified experience of the Homebrew package manager."),
-		l.Get("Check out **tealdeer** with `brew install tealdeer` to have a basic rundown on commands for your tools."),
-		l.Get("**Performance profiling is built-in** — try `sysprof`, `bpftrace`, or `perf` to dig into what your system is doing."),
+		l.Get("Press `Ctrl + Alt + T` to quickly open a terminal."),
+		l.Get("**Did an update break something?** Roll back with `bootc rollback`."),
+		l.Get("Search for and install packages with `brew search` and `brew install`. %s will handle the updates automatically.", GetOSName()),
+		l.Get("Use `ujust --choose` to see all ujust shortcuts and their associated scripts."),
+		l.Get("The **Bazaar** app store is created by **Kolunmi** — [Support their work](%s)", "https://ko-fi.com/kolunmi"),
+		l.Get("Switch shells safely: Change your shell in your Terminal's settings (not system-wide) — [Read more](%s)", "https://tim.siosm.fr/blog/2023/12/22/dont-change-defaut-login-shell/"),
+		l.Get("Export Distrobox packages to make them appear like native applications — [View documentation](%s)", "https://distrobox.it/usage/distrobox-export/"),
+		l.Get("**H.264 hardware acceleration works out of the box** — no tweaks needed!"),
+		l.Get("**No Flatpak available?** Use Gear Lever for easy AppImage management — [Check it out](%s)", "appstream://it.mijorus.gearlever"),
+		l.Get("**Tailscale is included** — check out [the docs](%s)", "https://tailscale.com/docs/how-to/quickstart"),
+		l.Get("**Need to manage Flatpak repositories and data?** — Try [Warehouse](%s)", "appstream://io.github.flattool.Warehouse"),
+		l.Get("Use Clapgrep for **powerful folder searches** — [Check it out](%s)", "appstream://de.leopoldluley.Clapgrep"),
+		l.Get("**Love our wallpapers?** Explore the full [Universal Blue artwork collection](%s)", "https://docs.projectbluefin.io/artwork/"),
+		l.Get("Run `sl` makes a Steam locomotive appear in your terminal! Install it with `brew install sl`"), // idea from bigredsponge
+		l.Get("**Are you a developer?** — Try `Developer Mode` for container tooling, virtualization, and IDEs — run `ujust devmode`"),
+		l.Get("**Like servers?** Check out [ucore](%s)", "https://github.com/ublue-os/ucore"),
+		l.Get("Use `ujust bbrew` to try **BBrew**, a simplified Homebrew package manager."),
+		l.Get("Install out **tealdeer** (`brew install tealdeer`) for a quick rundown of command-line tools."),
 		// l.Get("`cowsay <something>` makes a cow say something right in your terminal! Install it with `brew install cowsay`"), - homebrew cowsay requires to have perl installed.. but it's not automatically installed with cowsay as a dependency
+		l.Get("These messages are part of umotd — [Check it out](%s)", "https://github.com/projectbluefin/umotd"),
+		l.Get("**Want to add new messages?** File an issue on the [umotd GitHub repository](%s)", "https://github.com/projectbluefin/umotd"),
 	}...)
 
 	// Desktop related messages
 
 	if slices.Contains(tags, "gnome") {
 		messages = append(messages, []string{
-			l.Get("**GNOME makes your desktop!** — [Donate to GNOME](%s)", "https://donate.gnome.org"),
-			l.Get("**Want to control your device from your phone?** Look for the `GSConnect` extension in the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
+			l.Get("**GNOME powers your desktop** — [Donate to GNOME](%s)", "https://donate.gnome.org"),
+			l.Get("**Control your device from your phone** with the `GSConnect` extension. Look for it in the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
 			l.Get("**Miss the wobbly windows from the early 2000s?** Look for the `Compiz windows effect` extension in the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
-			l.Get("Manage desktop extensions with the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
-			l.Get("**Need more control over your Flatpak apps permissions?** Tweak them to your liking with [Flatseal](%s)", "appstream://com.github.tchx84.Flatseal"),
+			l.Get("Do you like **the blur**? The `Blur my Shell` extension is pre-installed ! Configure it to your liking in the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
+			l.Get("**Want to see Bluetooth device battery levels?** Look for the `Bluetooth Battery Meter` extension in the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
+			l.Get("Manage desktop extensions using the [Extension Manager](%s)", "appstream://com.mattjakeman.ExtensionManager"),
+			l.Get("**Need more control over Flatpak app permissions?** Tweak them to your liking with [Flatseal](%s)", "appstream://com.github.tchx84.Flatseal"),
 		}...)
 	}
 
 	if slices.Contains(tags, "kde") {
 		messages = append(messages, []string{
-			l.Get("**KDE powers your desktop!** — [Donate to KDE](%s)", "https://kde.org/donate"),
-			l.Get("The KDE mascot is a dragon named `Konqi`!"),
-			l.Get("**Want to control your device from your phone?** Then the KDE Connect app is made for you — [More info](%s)", "https://kdeconnect.kde.org/"),
-			l.Get("**Want more control over Flatpak app permissions?** Tweak them to your liking under `Security and Privacy → App Permissions` in System Settings!"),
+			l.Get("**KDE powers your desktop** — [Donate to KDE](%s)", "https://kde.org/donate"),
+			l.Get("The KDE mascot is a dragon named **Konqi**!"),
+			l.Get("**Control your device from your phone** with the `KDE Connect` app — [More info](%s)", "https://kdeconnect.kde.org/"),
+			l.Get("**Adjust Flatpak app permissions** in System Settings → Security and Privacy → App Permissions."),
 		}...)
 	}
 
@@ -65,56 +65,61 @@ func GetRandomMessage(l *gotext.Locale, tags []string) string {
 	if slices.Contains(tags, "aurora") {
 		messages = append(messages, []string{
 			l.Get("**Love Aurora?** Help keep it going by [donating](%s)", "https://docs.getaurora.dev/project-docs/credits"),
-			l.Get("**Need more in-depth technical information?** — Check out the [Aurora docs](%s)", "https://docs.getaurora.dev"),
-			l.Get("Don't forget to check the [release notes](%s)", "https://github.com/ublue-os/aurora/releases"),
+			l.Get("**Need technical details?** Check out the [Aurora docs](%s)", "https://docs.getaurora.dev"),
 			l.Get("The wallpapers are made by **Chandeleer** — [Support their work](%s)", "https://ko-fi.com/chandeleer"),
-			l.Get("Use `ujust rebase-helper` to roll back to a specific image or switch channels — [See the docs for details](%s)", "https://docs.getaurora.dev/guides/release-streams/#switching-between-streams"),
-			l.Get("**Are you into dinosaurs?** Then try `ujust toggle-dinosaurs` for a mesozoic surprise!"),
-			l.Get("Are you a developer? Then the `Developer Experience` is made for you! — [Check it out](%s)", "https://docs.getaurora.dev/dx/aurora-dx-intro"),
+			l.Get("Use `ujust rebase-helper` to roll back or switch channels — [See the docs](%s)", "https://docs.getaurora.dev/guides/release-streams/#switching-between-streams"),
+			l.Get("**Like dinosaurs?** Try `ujust toggle-dinosaurs` for a Mesozoic surprise!"),
+			l.Get("Are you a developer? Try the `Developer Experience` — [Check it out](%s)", "https://docs.getaurora.dev/dx/aurora-dx-intro"),
+			l.Get("**%s is not a distro**, this is a custom image built on  Fedora Atomic Desktop technology — [View our mission](%s)", GetOSName(), "https://ublue.it/mission/"),
 		}...)
 	}
 	if slices.Contains(tags, "bazzite") {
 		messages = append(messages, []string{
 			l.Get("**Love Bazzite?** Help keep it going by [donating](%s)", "https://docs.bazzite.gg/donations/"),
-			l.Get("**Did an update break something?** You can roll back, pin the previous release, or rebase to an older build — [view the guide](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates/"),
-			l.Get("**Care about game preservation?** Support the Stop Killing Games initiative — [Find out more](%s)", "https://www.stopkillinggames.com/"),
-			l.Get("**Prefer Distrobox over rpm-ostree for installing packages** — It's safer and easier to manage. `ujust distrobox` gets you started! — [More info](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Distrobox/"),
-			l.Get("**Installing a Windows game that isn't on Steam?** Lutris is pre-installed and recommended for better handling of Wine prefixes — [View gaming guide](%s)", "https://docs.bazzite.gg/Gaming/"),
-			l.Get("Bazzite uses BTRFS for internal and external drives (including MicroSD). Note: **NTFS and exFAT are not supported.**"),
+			l.Get("**Did an update break something?** Roll back, pin the previous release, or rebase to an older build — [view the guide](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates/"),
+			l.Get("**Care about game preservation?** Support the Stop Killing Games initiative — [Learn more](%s)", "https://www.stopkillinggames.com/"),
+			l.Get("**Prefer Distrobox for package installation!** It’s safer and easier — start with `ujust distrobox`. [More info](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Distrobox/"),
+			l.Get("**Installing a non-Steam Windows game?** Use Lutris (pre-installed) for better Wine prefix handling — [View gaming guide](%s)", "https://docs.bazzite.gg/Gaming/"),
+			l.Get("Bazzite uses BTRFS for all drives (including MicroSD). Note: **NTFS and exFAT are not supported.**"),
 			l.Get("**Looking to set up Waydroid?** — [View our documentation](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Waydroid_Setup_Guide/"),
-			l.Get("Bazzite uses ZSTD-compressed BTRFS with automatic deduplication -> **meaning more storage space for your games.**"),
-			l.Get("**Managing a large ROM library?** The ROM Properties Page shell extension comes pre-installed, adding **thumbnails and metadata** to all your files."),
-			l.Get("The `bazzite-rollback-helper` command can guide you for rolling back or rebasing to older Bazzite builds — [More info](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates/"),
-			l.Get("ProtonPlus can be used to install and update custom versions of Proton. We recommend Proton-GE for problematic Steam games and Wine-GE for all other use cases outside of Steam."),
-			l.Get("**Want to customize and theme your desktop?** — [Follow our guide](%s) to get started.", "https://docs.bazzite.gg/General/Desktop_Environment_Tweaks/"),
+			l.Get("Bazzite uses ZSTD-compressed BTRFS with automatic deduplication — **more storage space for all your games!**"),
+			l.Get("**Managing a large ROM library?** The ROM Properties Page shell extension (pre-installed) adds **thumbnails and metadata** to your files."),
+			l.Get("Use the `bazzite-rollback-helper` to roll back or rebase to older builds — [More info](%s)", "https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/rolling_back_system_updates/"),
+			l.Get("Use ProtonPlus to install custom Proton versions. We recommend Proton-GE for Steam games and Wine-GE for non-Steam use cases."),
+			l.Get("**Want to customize your desktop?** — [Follow our guide](%s)", "https://docs.bazzite.gg/General/Desktop_Environment_Tweaks/"),
+			l.Get("**Performance profiling is built-in** — use `sysprof`, `bpftrace`, or `perf` to analyze your system."),
+			l.Get("**%s is not a distro** — it’s a custom image built on  Fedora Atomic Desktop — [View our mission](%s)", GetOSName(), "https://ublue.it/mission/"),
+			l.Get("**Support indie game preservation and OSS developers** — [Join Hit Save!'s Patreon](%s)", "https://patreon.com/hitsave"),
+			l.Get("Use `ujust changelogs` to view a summary of the package changes since the last update."),
 		}...)
 	}
 	if slices.Contains(tags, "bazzite-gnome") {
 		messages = append(messages, []string{
-			l.Get("**Missing the hot corner?** Move your mouse to the bottom edge of the screen to trigger the Activities overview — or re-enable it in Settings."),
+			l.Get("**Missing the hot corner?** Move your mouse to the edge at the bottom of your screen to trigger the Activities overview, or re-enable it in Settings."),
 		}...)
 	}
 	if slices.Contains(tags, "bazzite-deck") {
 		messages = append(messages, []string{
-			l.Get("**Want to install Decky Loader?** There's a `ujust` command for that! `ujust setup-decky install`"),
-			l.Get("󰓓 The Steam game mode updater also updates Bazzite, Flatpak apps, and Distrobox containers. The changelog shown is from the Steam client."),
-			l.Get("**Install a game with Lutris?** Right-click on it and `Create steam shortcut` to easily play it in 󰓓 Steam game mode."),
-			l.Get("**Games missing icons?** The `SteamGridDB` plugin for Decky Loader makes it easy to add missing art — [More info](%s)", "https://github.com/SteamGridDB/decky-steamgriddb"),
-			l.Get("**Confused about what games are compatible with Linux?** The `ProtonDB Badges` plugin for Decky Loader adds community-powered game compatibility badges to your entire 󰓓 Steam Library — [More info](%s)", "https://github.com/OMGDuke/protondb-decky"),
-			l.Get("**Looking for more security?** Tailscale and OpenVPN are built-in, and can be controlled from 󰓓 Steam game mode by the `Tailscale Control` and `TunnelDeck` Decky loader plugins."),
-			l.Get("**Using a handheld that doesn't have enough buttons?** 󰓓 Steam game mode now supports touch gestures to slide out the menus, thanks to [ChimeraOS](%s)", "https://chimeraos.org/"),
+			l.Get("**Want to install Decky Loader?** Use `ujust setup-decky install`"),
+			l.Get("󰓓 The Steam game mode updater also updates Bazzite, Flatpak apps, and Distrobox containers. The changelog is from the Steam client."),
+			l.Get("**Install a game with Lutris?** Right-click on it and `Create Steam Shortcut` to play it in 󰓓 Steam game mode."),
+			l.Get("**Missing game icons?** Use the `SteamGridDB` plugin for Decky Loader to add missing art — [More info](%s)", "https://github.com/SteamGridDB/decky-steamgriddb"),
+			l.Get("**Not sure which games are Linux-compatible?** The `ProtonDB Badges` plugin for Decky Loader adds community-powered compatibility badges to your entire 󰓓 Steam Library — [More info](%s)", "https://github.com/OMGDuke/protondb-decky"),
+			l.Get("**Want more security?** Use **Tailscale** and **OpenVPN** (built-in) with the `Tailscale Control` and `TunnelDeck` Decky Loader plugins in 󰓓 Steam game mode."),
+			l.Get("**Using a handheld with limited buttons?** 󰓓 Steam game mode supports touch gestures to slide out the menus, thanks to [ChimeraOS](%s)", "https://chimeraos.org/"),
 		}...)
 	}
 	if slices.Contains(tags, "bluefin") {
 		messages = append(messages, []string{
 			l.Get("**Love Bluefin?** Help keep it going by [donating](%s)", "https://docs.projectbluefin.io/donations"),
-			l.Get("Need more in-depth technical information? — Check out the [Bluefin Administrator's Guide](%s)", "https://docs.projectbluefin.io/administration"),
-			l.Get("Don't forget to check the [release notes](%s)", "https://github.com/ublue-os/bluefin/releases"),
+			l.Get("Need technical details? — Check out the [Bluefin Administrator's Guide](%s)", "https://docs.projectbluefin.io/administration"),
 			l.Get("Use DistroShelf to run apps from other distros in isolated containers — no commitment required — [Check it out](%s)", "appstream://com.ranfdev.DistroShelf"),
-			l.Get("Use `ujust rebase-helper` to roll back to a specific image or switch channels — [See the docs for details](%s)", "https://docs.projectbluefin.io/administration/#switching-between-streams"),
-			l.Get("The **Gradia Capture** extension is made by **Alexander Vanhee** — [Support their work](%s)", "https://ko-fi.com/alexandervanhee"),
-			l.Get("Almost all the wallpapers are made by **Jacob Schnurr** — [Check out his Etsy](%s)", "https://www.etsy.com/shop/JSchnurrCommissions"),
-			l.Get("Are you a developer? Then the `Developer Experience` is made for you! — [Check it out](%s)", "https://docs.projectbluefin.io/bluefin-dx/"),
+			l.Get("Use `ujust rebase-helper` to roll back or switch channels — [See the docs](%s)", "https://docs.projectbluefin.io/administration/#switching-between-streams"),
+			l.Get("The `Gradia Capture` extension helps you take better screenshots! [Support the developer's work](%s)", "https://ko-fi.com/alexandervanhee"),
+			l.Get("Most wallpapers are by **Jacob Schnurr** — [Check out his Etsy](%s)", "https://www.etsy.com/shop/JSchnurrCommissions"),
+			l.Get("Are you a developer? Try the `Developer Experience` — [Check it out](%s)", "https://docs.projectbluefin.io/bluefin-dx/"),
+			// l.Get("**Bluefin Dakotaraptor** is the newest addition to the Bluefin family! — [Check it out](%s)", "https://docs.projectbluefin.io/dakota/"),
+			// l.Get("**Bluefin Dakotaraptor** builds your desktop directly from GNOME! — [Check it out](%s)", "https://docs.projectbluefin.io/dakota/"),
 		}...)
 	}
 
@@ -122,18 +127,18 @@ func GetRandomMessage(l *gotext.Locale, tags []string) string {
 
 	if slices.Contains(tags, "vscode") {
 		messages = append(messages, []string{
-			l.Get("**Container development is OS-agnostic** — your devcontainers work on Linux, macOS, and Windows."),
-			l.Get("**Develop with devcontainers** — use `devcontainer.json` files in your projects for isolated, reproducible environments! - Don't forget to activate the containers workflow with `ujust devmode` and [get started today !](%s)", "https://code.visualstudio.com/docs/devcontainers/tutorial"),
-			l.Get("Prefer `docker compose` for multi-container setups where a single devcontainer isn't enough."),
+			l.Get("**Container development is OS-agnostic** — devcontainers work on Linux, macOS, and Windows."),
+			l.Get("**Develop with devcontainers** — use `devcontainer.json` to create isolated, reproducible environments! - Activate the workflow with `ujust devmode` and [get started today !](%s)", "https://code.visualstudio.com/docs/devcontainers/tutorial"),
+			l.Get("For multi-container setups, use `docker compose` instead of a single devcontainer."),
 		}...)
 	}
 
 	if slices.Contains(tags, "containers") {
 		messages = append(messages, []string{
-			l.Get("**%s is your gateway to Kubernetes** 󱃾 `kind create cluster` to [get started](%s)", GetOSName(), "https://kind.sigs.k8s.io/"),
+			l.Get("**%s is your gateway to 󱃾 Kubernetes** — run `kind create cluster` to [get started](%s)", GetOSName(), "https://kind.sigs.k8s.io/"),
 			l.Get("**%s is your gateway to Cloud Native** — find your flock at [landscape.cncf.io](%s)", GetOSName(), "https://l.cncf.io"),
-			l.Get("**%s separates the OS from your development environment** — take full advantage of the cloud-native workflow!", GetOSName()),
-			l.Get("`ujust bbrew` and select `k8s-tools` that will get you started with Kubernetes development tools like `kind` and `kubectl`."),
+			l.Get("%s separates the OS from your development environment — **embrace the cloud-native workflow**!", GetOSName()),
+			l.Get("Use `ujust bbrew` and select `k8s-tools` to install Kubernetes tools like `kind` and `kubectl`."),
 		}...)
 	}
 
