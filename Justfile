@@ -35,6 +35,8 @@ translate lang:
                 --language=Go \
                 --from-code=UTF-8 \
                 --keyword=Get \
+                --package-name=umotd \
+                --package-version="{{version}}" \
                 --output=locales/temp/default.pot
     }
 
