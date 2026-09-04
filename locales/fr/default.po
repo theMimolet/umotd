@@ -1,228 +1,227 @@
-#
+# French translation for uMotd
+# Copyright (C) 2026, The Project Bluefin Contributors
+# This file is distributed under the same license as the uMotd package.
 # Mimolet <themimolet@proton.me>, 2026.
 #
 msgid ""
 msgstr ""
+"Project-Id-Version: umotd 0.3.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-04 16:41+0200\n"
+"PO-Revision-Date: 2026-09-05 01:07+0200\n"
+"Last-Translator: Mimolet <themimolet@proton.me>\n"
+"Language-Team: French <international-french@discourse.gnome.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Gtranslator 50.0\n"
-"Project-Id-Version: umotd\n"
-"Last-Translator: Mimolet <themimolet@proton.me>\n"
-"Language-Team: French <gnomefr@traduc.org>\n"
-"PO-Revision-Date: 2026-08-03 16:59+0200\n"
 
-#: internal/messages.go:25
-msgid ""
-"*%s isn't a distro*, this is a custom image built on  Fedora Atomic Desktop "
-"technology — [View our mission](%s)"
-msgstr ""
-"*%s n'est pas une distribution*, mais une image personnalisée créée à partir "
-"de la technologie   Fedora Atomic — [Voir notre mission](%s)"
+#: internal/tags.go:30
+msgid "Subcommand for `tags` not recognized."
+msgstr "Sous-commande pour `tags` non reconnue."
 
-#: internal/messages.go:134
-msgid ""
-"**%s is your gateway to Cloud Native** — find your flock at "
-"[landscape.cncf.io](%s)"
-msgstr ""
-"**%s est votre porte d'entrée au Cloud Native** — trouvez votre vocation à "
-"[landscape.cncf.io](%s)"
+#: internal/tags.go:45
+msgid "No tags to add."
+msgstr "Aucun tag à ajouter."
 
-#: internal/messages.go:133
-msgid ""
-"**%s is your gateway to Kubernetes** 󱃾 `kind create cluster` to [get started]"
-"(%s)"
-msgstr ""
-"**%s est votre porte d'entrée à Kubernetes** 󱃾 `kind create cluster` pour "
-"[commencer](%s)"
+#: internal/tags.go:50
+#, go-format
+msgid "Tag %s already exists."
+msgstr "Le tag %s existe déjà."
 
-#: internal/messages.go:135
-msgid ""
-"**%s separates the OS from your development environment** — take full "
-"advantage of the cloud-native workflow!"
-msgstr ""
-"**%s sépare le système d'exploitation de votre environnement de "
-"développement** — prenez en mains le workflow cloud-native !"
+#: internal/tags.go:52
+#, go-format
+msgid "Failed to add tag %s."
+msgstr "Échec de l'ajout du tag %s."
 
-#: internal/messages.go:34
-msgid ""
-"**Are you a developer?** — Check out our `Developer Mode` that includes "
-"container tooling, virtualization, and many IDEs at `ujust devmode`"
-msgstr ""
-"**Êtes-vous développeur?** — Si c'est le cas, vous pouvez activer notre "
-"`Mode développeur` qui inclus des outils pour les conteneurs, le nécessaire "
-"pour la virtualisation et tous vos IDEs préférés au choix avec `ujust "
-"devmode`"
+#: internal/tags.go:53 internal/tags.go:68
+#, go-format
+msgid "Error ~> %s"
+msgstr "Erreur ~> %s"
 
-#: internal/messages.go:72
-msgid ""
-"**Are you into dinosaurs?** Then try `ujust toggle-dinosaurs` for a mesozoic "
-"surprise!"
-msgstr ""
-"**Aimez-vous les dinosaures?** Si c'est le cas, essayez `ujust toggle-"
-"dinosaurs` pour une surprise mésozoïque !"
+#: internal/tags.go:60
+msgid "No tags to remove."
+msgstr "Aucun tag à supprimer."
 
-#: internal/messages.go:80
-msgid ""
-"**Care about game preservation?** Support the Stop Killing Games initiative "
-"— [Find out more](%s)"
-msgstr ""
-"**Vous souciez vous de la préservation de vos jeux?** Si c'est le cas, "
-"soutenez l'initiative Stop Killing Games — [En savoir plus](%s)"
+#: internal/tags.go:65
+#, go-format
+msgid "Tag %s doesn't exist."
+msgstr "Le tag %s n'existe pas."
 
-#: internal/messages.go:31
-msgid ""
-"**Clapgrep lets you do super powerful searches** within your folders — "
-"[Check it out](%s)"
-msgstr ""
-"**Clapgrep vous permet de faire des recherches super puissantes**  à travers "
-"vos dossiers — [Aller voir](%s)"
+#: internal/tags.go:67
+#, go-format
+msgid "Failed to remove tag %s."
+msgstr "Échec de la suppression du tag %s."
 
-#: internal/messages.go:103
-msgid ""
-"**Confused about what games are compatible with Linux?** The `ProtonDB "
-"Badges` plugin for Decky Loader adds community-powered game compatibility "
-"badges to your entire 󰓓 Steam Library — [More info](%s)"
-msgstr ""
-"**Confus par la compatibilité de vos jeux avec Linux ?** Le plugin Decky "
-"Loader pour les badges `ProtonDB` rajoute des badges de compatibilité gérés "
-"par la communauté pour toute votre bibliothèque 󰓓 Steam — [En savoir plus]"
-"(%s)"
-
-#: internal/messages.go:131
-msgid ""
-"**Container development is OS-agnostic** — your devcontainers work on Linux, "
-"macOS, and Windows."
-msgstr ""
-"**Le développement par conteneur est indépendant de votre système** — vos "
-"devcontainers fonctionnent sur Linux, macOS et Windows.\""
-
-#: internal/messages.go:125
-msgid ""
-"**Develop with devcontainers** — use `devcontainer.json` files in your "
-"projects for isolated, reproducible environments! - Don't forget to activate "
-"the containers workflow with `ujust devmode` and [get started today !](%s)"
-msgstr ""
-"En utilisant des fichiers `devcontainer.json` dans vos projets, vous aurez "
-"des environnements isolés et reproductibles qui marchent sur n'importe quel "
-"système! - En n'oubliant pas d'activer le workflows [Commencer](%s)"
+#: internal/messages.go:17
+msgid "Press `Ctrl + Alt + T` to quickly open a terminal."
+msgstr "Appuyez sur `Ctrl + Alt + T` pour ouvrir un terminal rapidement."
 
 #: internal/messages.go:18
-msgid ""
-"**Did an update break something?** You can roll back with `bootc rollback`."
+msgid "**Did an update break something?** Roll back with `bootc rollback`."
 msgstr ""
-"**Une mise à jour a cassé quelque chose ?** Revenez en arrière avec la "
-"commande `bootc rollback`."
+"**Une mise à jour a-t-elle cassé quelque chose ?** Revenez en arrière avec "
+"la commande `bootc rollback`."
 
-#: internal/messages.go:79
+#: internal/messages.go:19
+#, go-format
 msgid ""
-"**Did an update break something?** You can roll back, pin the previous "
-"release, or rebase to an older build — [view the guide](%s)"
+"Search for and install packages with `brew search` and `brew install`. %s "
+"will handle the updates automatically."
 msgstr ""
-"**Une mise à jour a cassé quelque chose ?** Vous pouvez revenir en arrière, "
-"stopper les mises à jour, voire même basculer sur une version antérieure — "
-"[Voir le guide](%s)"
+"Cherchez et installez des paquets avec `brew search` et `brew install`.%s "
+"s'occupera de leurs mises à jour automatiquement."
 
-#: internal/messages.go:35
-msgid "**Do you like servers?** Then check out [ucore](%s)"
-msgstr "**Aimez-vous les serveurs ?** Alors [ucore](%s) est fait pour vous !"
-
-#: internal/messages.go:32
+#: internal/messages.go:20
 msgid ""
-"**Do you love our wallpapers?** Check out the full [Universal Blue artwork "
-"collection](%s)"
+"Use `ujust --choose` to see all ujust shortcuts and their associated scripts."
 msgstr ""
-"**Aimez-vous nos fonds d'écran ?** Vous allez être intéressés par la "
-"[collection d'artworks Universal Blue](%s)"
+"Utilisez `ujust --choose` pour voir toutes les commandes `ujust` et les "
+"scripts qu'elles utilisent."
 
-#: internal/messages.go:46
-msgid "**GNOME makes your desktop!** — [Donate to GNOME](%s)"
-msgstr ""
-"**Votre bureau a été créé par la fondation GNOME !** N'hésitez pas à leur "
-"[faire un don](%s)"
-
-#: internal/messages.go:102
+#: internal/messages.go:21
+#, go-format
 msgid ""
-"**Games missing icons?** The `SteamGridDB` plugin for Decky Loader makes it "
-"easy to add missing art — [More info](%s)"
+"The **Bazaar** app store is created by **Kolunmi** — [Support their work](%s)"
 msgstr ""
-"**Des icônes manquantes pour vos jeux?** Le plugin Decky Loader "
-"`SteamGridDB` rend accessible l'ajout de couvertures et de bannières pour "
-"vos jeux — [En savoir plus](%s)"
+"La logithèque **Bazaar** est créé par **Kolunmi** — [Soutenir son travail]"
+"(%s)"
 
-#: internal/messages.go:27
+#: internal/messages.go:22
+#, go-format
 msgid ""
-"**H.264 hardware acceleration works out of the box** — no tweaks necessary!"
+"Switch shells safely: Change your shell in your Terminal's settings (not "
+"system-wide) — [Read more](%s)"
+msgstr ""
+"Changer de shell en toute sécurité : changez votre shell dans les paramètres "
+"du terminal plutôt qu'à l'échelle du système — [En savoir plus](%s)"
+
+#: internal/messages.go:23
+#, go-format
+msgid ""
+"Export Distrobox packages to make them appear like native applications — "
+"[View documentation](%s)"
+msgstr ""
+"Exportez des paquets depuis Distrobox pour les faire apparaitre comme "
+"n'importe quelle autre application native. — [Voir la documentation](%s)"
+
+#: internal/messages.go:24
+msgid ""
+"**H.264 hardware acceleration works out of the box** — no tweaks needed!"
 msgstr ""
 "**L'accélération matérielle H.264 est prise en charge par défaut.** — aucun "
 "réglage nécessaire !"
 
-#: internal/messages.go:101
+#: internal/messages.go:25
+#, go-format
 msgid ""
-"**Install a game with Lutris?** Right-click on it and `Create steam "
-"shortcut` to easily play it in 󰓓 Steam game mode."
+"**No Flatpak available?** Use Gear Lever for easy AppImage management — "
+"[Check it out](%s)"
 msgstr ""
-"**Besoin d'installer un jeu avec Lutris? Il suffit d'un clic droit sur votre "
-"jeu et sélectionner `Create steam shortcut` pour le lancer facilement depuis "
-"le 󰓓 Steam game mode."
+"**Aucun Flatpak disponible?** Utilisez Levier de vitesse pour gérer les "
+"AppImages facilement — [Aller voir](%s)"
 
-#: internal/messages.go:82
+#: internal/messages.go:26
+#, go-format
+msgid "**Tailscale is included** — check out [the docs](%s)"
+msgstr ""
+"**Tailscale est inclus dans votre système**, n'hésitez pas à aller voir "
+"[leur documentation](%s)"
+
+#: internal/messages.go:27
+#, go-format
+msgid "**Need to manage Flatpak repositories and data?** — Try [Warehouse](%s)"
+msgstr ""
+"**Besoin de plus de contrôle sur vos données et vos sources Flatpak?** — "
+"Essayez [Warehouse](%s)"
+
+#: internal/messages.go:28
+#, go-format
+msgid "Use Clapgrep for **powerful folder searches** — [Check it out](%s)"
+msgstr ""
+"Utilisez `Clapgrep` pour **faire des recherches super puissantes à travers "
+"vos dossiers** — [Aller voir](%s)"
+
+#: internal/messages.go:29
+#, go-format
 msgid ""
-"**Installing a Windows game that isn't on Steam?** Lutris is pre-installed "
-"and recommended for better handling of Wine prefixes — [View gaming guide]"
+"**Love our wallpapers?** Explore the full [Universal Blue artwork collection]"
 "(%s)"
 msgstr ""
-"**Pour installer un jeu Windows qui n'est pas sur Steam**, Lutris est pré-"
-"installé et recommandé pour une meilleure gestion des préfixes Wine — [Voir "
-"le guide](%s)"
+"**Aimez-vous nos fonds d'écran ?** Explorez-donc la [collection d'artworks "
+"Universal Blue](%s)"
 
-#: internal/messages.go:56
-msgid "**KDE powers your desktop!** — [Donate to KDE](%s)"
+#: internal/messages.go:30
+msgid ""
+"Run `sl` makes a Steam locomotive appear in your terminal! Install it with "
+"`brew install sl`"
 msgstr ""
-"**Votre bureau a été créé par la communauté KDE!** N'hésitez pas à leur "
+"`sl` fait apparaître une locomotive à vapeur dans votre terminal! Installez-"
+"la avec `brew install sl`"
+
+#: internal/messages.go:31
+msgid ""
+"**Are you a developer?** — Try `Developer Mode` for container tooling, "
+"virtualization, and IDEs — run `ujust devmode`"
+msgstr ""
+"**Êtes-vous développeur?** — Essayez notre `Mode développeur` pour avoir des "
+"outils pour les conteneurs, la virtualisation et tous vos IDEs préférés au "
+"choix avec `ujust devmode`"
+
+#: internal/messages.go:32
+#, go-format
+msgid "**Like servers?** Check out [ucore](%s)"
+msgstr "**Aimez-vous les serveurs ?** Alors [ucore](%s) est fait pour vous !"
+
+#: internal/messages.go:33
+msgid ""
+"Use `ujust bbrew` to try **BBrew**, a simplified Homebrew package manager."
+msgstr ""
+"Installez **BBrew** avec `ujust bbrew` pour avoir du gestionnaire de paquet "
+"Homebrew simple d'utilisation."
+
+#: internal/messages.go:34
+msgid ""
+"Install out **tealdeer** (`brew install tealdeer`) for a quick rundown of "
+"command-line tools."
+msgstr ""
+"Installez **tealdeer** avec `brew install tealdeer` pour avoir un aperçu "
+"rapide et efficace de vos outils."
+
+#: internal/messages.go:36
+#, go-format
+msgid "These messages are part of umotd — [Check it out](%s)"
+msgstr "Ces messages font partie d'uMotd — [Aller voir](%s)"
+
+#: internal/messages.go:37
+#, go-format
+msgid ""
+"**Want to add new messages?** File an issue on the [umotd GitHub repository]"
+"(%s)"
+msgstr ""
+"**Envie de rajouter de nouveaux messages ?** Créez une issue dans le [dépôt "
+"Github d'umotd](%s) "
+
+#: internal/messages.go:44
+#, go-format
+msgid "**GNOME powers your desktop** — [Donate to GNOME](%s)"
+msgstr ""
+"**Votre bureau a été créé par la fondation GNOME !** — N'hésitez pas à leur "
 "[faire un don](%s)"
 
-#: internal/messages.go:104
+#: internal/messages.go:45
+#, go-format
 msgid ""
-"**Looking for more security?** Tailscale and OpenVPN are built-in, and can "
-"be controlled from 󰓓 Steam game mode by the `Tailscale Control` and "
-"`TunnelDeck` Decky loader plugins."
+"**Control your device from your phone** with the `GSConnect` extension. Look "
+"for it in the [Extension Manager](%s)"
 msgstr ""
-"**Recherchez-vous plus de sécurité ?** Tailscale et OpenVPN sont intégrés et "
-"peuvent être contrôlé depuis le 󰓓 Steam game mode grâce aux plugins Decky "
-"Loader `Tailscale Control` et `TunnelDeck`."
+"**Vous souhaitez lier votre appareil avec votre téléphone ?** Recherchez "
+"l'extension `GSConnect` dans le [Gestionnaire d'extensions](%s)"
 
-#: internal/messages.go:84
-msgid "**Looking to set up Waydroid?** — [View our documentation](%s)"
-msgstr ""
-"**Vous souhaitez configurer Waydroid?** — [Voir notre documentation](%s)"
-
-#: internal/messages.go:67
-msgid "**Love Aurora?** Help keep it going by [donating](%s)"
-msgstr "**Vous aimez Aurora ?** Aidez-nous à continuer en [faisant un don](%s)"
-
-#: internal/messages.go:78
-msgid "**Love Bazzite?** Help keep it going by [donating](%s)"
-msgstr ""
-"**Vous aimez Bazzite ?** Aidez-nous à continuer en [faisant un don](%s)"
-
-#: internal/messages.go:110
-msgid "**Love Bluefin?** Help keep it going by [donating](%s)"
-msgstr ""
-"**Vous aimez Bluefin ?** Aidez-nous à continuer en [faisant un don](%s)"
-
-#: internal/messages.go:86
-msgid ""
-"**Managing a large ROM library?** The ROM Properties Page shell extension "
-"comes pre-installed, adding **thumbnails and metadata** to all your files."
-msgstr ""
-"**Avez-vous une grande bibliothèque de ROMs ?** La page de propriétés ROM "
-"est préinstallée et rajoute des **vignettes et métadonnées** à tous vos "
-"fichiers. "
-
-#: internal/messages.go:48
+#: internal/messages.go:46
+#, go-format
 msgid ""
 "**Miss the wobbly windows from the early 2000s?** Look for the `Compiz "
 "windows effect` extension in the [Extension Manager](%s)"
@@ -231,301 +230,339 @@ msgstr ""
 "Recherchez l'extension `Compiz windows effect` dans le [Gestionnaire "
 "d'extensions](%s)"
 
-#: internal/messages.go:94
+#: internal/messages.go:47
+#, go-format
 msgid ""
-"**Missing the hot corner?** Move your mouse to the bottom edge of the screen "
-"to trigger the Activities overview — or re-enable it in Settings."
+"Do you like **the blur**? The `Blur my Shell` extension is pre-installed ! "
+"Configure it to your liking in the [Extension Manager](%s)"
 msgstr ""
-"**Est-ce que le coin actif vous manque ?** Déplacez votre souris vers le "
-"bord inférieur de l'écran pour déclencher l’aperçu des activités – ou "
-"réactivez-le dans Paramètres."
+"Aimez-vous **le flou** ? L'extension `Blur my Shell est déjà pré-installé ! "
+"Configurez-la à votre image en utilisant le [Gestionnaire d'extensions](%s) "
+
+#: internal/messages.go:48
+#, go-format
+msgid ""
+"**Want to see Bluetooth device battery levels?** Look for the `Bluetooth "
+"Battery Meter` extension in the [Extension Manager](%s)"
+msgstr ""
+"**Souhaitez-vous voir le niveau de batterie de vos appareils Bluetooth ?** "
+"Recherchez l'extension `Bluetooth Battery Meter` dans le [Gestionnaire "
+"d'extensions](%s)"
+
+#: internal/messages.go:49
+#, go-format
+msgid "Manage desktop extensions using the [Extension Manager](%s)"
+msgstr "Gérez vos extensions avec le [Gestionnaire d'extensions](%s)"
 
 #: internal/messages.go:50
+#, go-format
 msgid ""
-"**Need more control over your Flatpak apps permissions?** Tweak them to your "
+"**Need more control over Flatpak app permissions?** Tweak them to your "
 "liking with [Flatseal](%s)"
 msgstr ""
-"**Besoin de plus de contrôle sur les autorisations de vos applis Flatpaks?** "
+"**Besoin de plus de contrôle sur les autorisations de vos applis Flatpak?** "
 "Modifiez les avec [Flatseal](%s)"
 
-#: internal/messages.go:68
+#: internal/messages.go:56
+#, go-format
+msgid "**KDE powers your desktop** — [Donate to KDE](%s)"
+msgstr ""
+"**Votre bureau a été créé par la communauté KDE!** — N'hésitez pas à leur "
+"[faire un don](%s)"
+
+#: internal/messages.go:57
+msgid "The KDE mascot is a dragon named **Konqi**!"
+msgstr "La mascotte de KDE est un dragon qui s'appelle **Konqi** !"
+
+#: internal/messages.go:58
+#, go-format
 msgid ""
-"**Need more in-depth technical information?** — Check out the [Aurora docs]"
-"(%s)"
+"**Control your device from your phone** with the `KDE Connect` app — [More "
+"info](%s)"
+msgstr ""
+"**Liez votre appareil avec votre téléphone avec KDE Connect — [En savoir "
+"plus](%s)"
+
+#: internal/messages.go:59
+msgid ""
+"**Adjust Flatpak app permissions** in System Settings → Security and Privacy "
+"→ App Permissions."
+msgstr ""
+"**Ajuster les autorisations de vos applis Flatpaks** en allant dans la "
+"configuration du système et modifiez les dans la section `Sécurité & "
+"Confidentialité → Permissions des applications`."
+
+#: internal/messages.go:67
+#, go-format
+msgid "**Love Aurora?** Help keep it going by [donating](%s)"
+msgstr "**Vous aimez Aurora ?** Aidez-nous à continuer en [faisant un don](%s)"
+
+#: internal/messages.go:68
+#, go-format
+msgid "**Need technical details?** Check out the [Aurora docs](%s)"
 msgstr ""
 "Pour plus d'informations techniques, jetez un coup d'œil à la [documentation "
 "d'Aurora](%s)"
 
-#: internal/messages.go:30
-msgid ""
-"**Need to manage your Flatpak repositories and data?** — [Check out "
-"Warehouse](%s)"
-msgstr ""
-"**Besoin de plus de contrôle sur vos données et vos sources Flatpak?** — "
-"[Allez voir Warehouse](%s)"
-
-#: internal/messages.go:28
-msgid ""
-"**No Flatpak available?** Gear Lever is perfect for easy AppImage management "
-"— [Check it out](%s)"
-msgstr ""
-"**Aucun Flatpak disponible?** Levier de vitesse est parfait pour gérer les "
-"AppImages facilement — [Aller voir](%s)"
-
-#: internal/messages.go:38
-msgid ""
-"**Performance profiling is built-in** — try `sysprof`, `bpftrace`, or `perf` "
-"to dig into what your system is doing."
-msgstr ""
-"**Des outils de profilage sont intégrés** — essayez `sysprof`, `bpftrace` ou "
-"`perf` pour comprendre ce que fait votre système en profondeur."
-
-#: internal/messages.go:81
-msgid ""
-"**Prefer Distrobox over rpm-ostree for installing packages** — It's safer "
-"and easier to manage. `ujust distrobox` gets you started! — [More info](%s)"
-msgstr ""
-"**Il est recommandé de privilégier Distrobox à rpm-ostree pour installer des "
-"paquets** — C'est plus sûr et plus simple à entretenir. La commande `ujust "
-"distrobox` est là pour bien démarrer! — [En savoir plus](%s)"
-
-#: internal/messages.go:26
-msgid ""
-"**Support indie game preservation and OSS developers!** — [Join Hit Save!'s "
-"Patreon](%s)"
-msgstr ""
-"**Soutenez la préservation de jeux indépendants et des développeurs de "
-"l'Open-Source !** — [Rejoignez le Patreon de Hit Save!](%s)"
-
-#: internal/messages.go:29
-msgid "**Tailscale is included**, check out [their docs](%s)"
-msgstr ""
-"**Tailscale est inclus dans votre système**, n'hésitez pas à jeter un coup "
-"d'œil à [leur documentation](%s)"
-
-#: internal/messages.go:105
-msgid ""
-"**Using a handheld that doesn't have enough buttons?** 󰓓 Steam game mode now "
-"supports touch gestures to slide out the menus, thanks to [ChimeraOS](%s)"
-msgstr ""
-"**Utilisez-vous un Steam Deck qui n'a pas assez de boutons?** 󰓓 Steam game "
-"mode prend en charge les gestes tactiles pour faire glisser les menus, grâce "
-"à [ChimeraOS](%s)"
-
-#: internal/messages.go:59
-msgid ""
-"**Want more control over Flatpak app permissions?** Tweak them to your "
-"liking under `Security and Privacy → App Permissions` in System Settings!"
-msgstr ""
-"**Besoin de plus de contrôle sur les autorisations de vos applis Flatpaks?** "
-"Modifiez les dans la section `Sécurité & Confidentialité → Permissions des "
-"applications` dans la configuration du système"
-
-#: internal/messages.go:47
-msgid ""
-"**Want to control your device from your phone?** Look for the `GSConnect` "
-"extension in the [Extension Manager](%s)"
-msgstr ""
-"**Vous souhaitez lier votre appareil avec votre téléphone ?** Recherchez "
-"l'extension `GSConnect` dans le [Gestionnaire d'extensions](%s)"
-
-#: internal/messages.go:58
-msgid ""
-"**Want to control your device from your phone?** Then the KDE Connect app is "
-"made for you — [More info](%s)"
-msgstr ""
-"**Vous souhaitez lier votre appareil avec votre téléphone ?** Alors "
-"l'application KDE Connect est faite pour vous — [En savoir plus](%s)"
-
-#: internal/messages.go:89
-msgid ""
-"**Want to customize and theme your desktop?** — [Follow our guide](%s) to "
-"get started."
-msgstr ""
-"**Envie de personnaliser et de changer le thème de votre bureau ?** — [Voir "
-"le guide](%s)"
-
-#: internal/messages.go:99
-msgid ""
-"**Want to install Decky Loader?** There's a `ujust` command for that! `ujust "
-"setup-decky install`"
-msgstr ""
-"La commande `ujust setup-decky install` vous permet d'installer Decky Loader "
-"sur votre système !"
-
-#: internal/messages.go:116
-msgid ""
-"Almost all the wallpapers are made by **Jacob Schnurr** — [Check out his "
-"Etsy](%s)"
-msgstr ""
-"Presque tous les fonds d'écran sont réalisés par **Jacob Schnurr** — [Voir "
-"sa page Etsy](%s)"
-
-#: internal/messages.go:117 internal/messages.go:73
-msgid ""
-"Are you a developer? Then the `Developer Experience` is made for you! — "
-"[Check it out](%s)"
-msgstr ""
-"Êtes-vous développeur  ? Si c'est le cas, l'`Experience Développeur\"` est "
-"faite pour vous ! —  [En savoir plus](%s) "
-
-#: internal/messages.go:83
-msgid ""
-"Bazzite uses BTRFS for internal and external drives (including MicroSD). "
-"Note: **NTFS and exFAT are not supported.**"
-msgstr ""
-"Bazzite utilise BTRFS pour les disques internes et externes (y compris "
-"MicroSD). Note: **NTFS et exFAT ne sont pas pris en charge.**"
-
-#: internal/messages.go:85
-msgid ""
-"Bazzite uses ZSTD-compressed BTRFS with automatic deduplication -> **meaning "
-"more storage space for your games.**"
-msgstr ""
-"Bazzite utilise un BTRFS compressé avec ZSTD et avec déduplication "
-"automatique -> **ce qui veut dire plus d'espace de stockage pour vos jeux.**"
-
-#: internal/messages.go:36
-msgid ""
-"Check out **BBrew** with `ujust bbrew` for a simplified experience of the "
-"Homebrew package manager."
-msgstr ""
-"Installez **BBrew** avec `ujust bbrew` pour avoir une expérience simplifiée "
-"du gestionnaire de paquet Homebrew."
-
-#: internal/messages.go:37
-msgid ""
-"Check out **tealdeer** with `brew install tealdeer` to have a basic rundown "
-"on commands for your tools."
-msgstr ""
-"Installez **tealdeer** avec `brew install tealdeer` pour avoir un aperçu de "
-"base de vos outils."
-
-#: internal/messages.go:112 internal/messages.go:69
-msgid "Don't forget to check the [release notes](%s)"
-msgstr "N'oubliez pas de consulter les [notes de version](%s)"
-
-#: internal/tags.go:53 internal/tags.go:68
-msgid "Error ~> %s"
-msgstr "Erreur ~> %s"
-
-#: internal/tags.go:52
-msgid "Failed to add tag %s."
-msgstr "Échec de l'ajout du tag %s."
-
-#: internal/tags.go:67
-msgid "Failed to remove tag %s."
-msgstr "Échec de la suppression du tag %s."
-
-#: main.go:41
-msgid "Invalid command."
-msgstr "Commande invalide."
-
-#: internal/messages.go:49
-msgid "Manage desktop extensions with the [Extension Manager](%s)"
-msgstr "Gérez vos extensions avec le [Gestionnaire d'extensions](%s)"
-
-#: internal/messages.go:111
-msgid ""
-"Need more in-depth technical information? — Check out the [Bluefin "
-"Administrator's Guide](%s)"
-msgstr ""
-"Pour plus d'informations techniques, jetez un coup d'œil au [guide "
-"d'administrateur Bluefin](%s)"
-
-#: internal/tags.go:45
-msgid "No tags to add."
-msgstr "Aucun tag à ajouter."
-
-#: internal/tags.go:60
-msgid "No tags to remove."
-msgstr "Aucun tag à supprimer."
-
-#: internal/messages.go:24
-msgid ""
-"Packages installed in Distrobox can be exported to appear like any other "
-"application — [View documentation](%s)"
-msgstr ""
-"Les paquets installés dans Distrobox peuvent être exportés pour ressembler à "
-"n'importe quelle autre appli. — [Voir la documentation](%s)"
-
-#: internal/messages.go:132
-msgid ""
-"Prefer `docker compose` for multi-container setups where a single "
-"devcontainer isn't enough."
-msgstr ""
-"Utilisez `docker compose` pour les configurations multi-conteneur si les "
-"devcontainers ne suffisent pas."
-
-#: internal/messages.go:88
-msgid ""
-"ProtonPlus can be used to install and update custom versions of Proton. We "
-"recommend Proton-GE for problematic Steam games and Wine-GE for all other "
-"use cases outside of Steam."
-msgstr ""
-"ProtonPlus peut être utilisé pour installer et mettre à jour des versions "
-"custom de Proton. Nous recommandons Proton-GE pour les jeux Steam "
-"problématiques et Wine-GE pour les autres jeux non-Steam."
-
-#: internal/tags.go:30
-msgid "Subcommand for `tags` not recognized."
-msgstr "Sous-commande pour `tags` non reconnue."
-
-#: internal/messages.go:23
-msgid ""
-"Switch shells safely: change your shell in Terminal settings instead of "
-"system-wide — [Read more](%s)"
-msgstr ""
-"Basculer d'un shell à l'autre en toute sécurité: changez votre shell dans "
-"les paramètres du terminal plutôt qu'à l'échelle du système — [En savoir "
-"plus](%s)"
-
-#: internal/tags.go:50
-msgid "Tag %s already exists."
-msgstr "Le tag %s existe déjà."
-
-#: internal/tags.go:65
-msgid "Tag %s doesn't exist."
-msgstr "Le tag %s n'existe pas."
-
-#: internal/messages.go:22
-msgid ""
-"The **Bazaar** app store is made by **Kolunmi** — [Support their work](%s)"
-msgstr ""
-"La logithèque **Bazaar** est créé par **Kolunmi** — [Soutenir son travail]"
-"(%s)"
-
-#: internal/messages.go:115
-msgid ""
-"The **Gradia Capture** extension is made by **Alexander Vanhee** — [Support "
-"their work](%s)"
-msgstr ""
-"L'extension **Gradia Capture** est crée par **Alexander Vanhee** — [Soutenir "
-"son travail](%s)"
-
-#: internal/messages.go:57
-msgid "The KDE mascot is a dragon named `Konqi`!"
-msgstr "La mascotte de KDE est un dragon qui s'appelle `Konqi` !"
-
-#: internal/messages.go:87
-msgid ""
-"The `bazzite-rollback-helper` command can guide you for rolling back or "
-"rebasing to older Bazzite builds — [More info](%s)"
-msgstr ""
-"La commande `bazzite-rollback-helper` peut vous guider pour revenir en "
-"arrière ou basculer vers des versions plus anciennes de Bazzite — [En savoir "
-"plus](%s)"
-
-#: internal/messages.go:70
+#: internal/messages.go:69
+#, go-format
 msgid "The wallpapers are made by **Chandeleer** — [Support their work](%s)"
 msgstr ""
 "Les fonds d'écran sont créés par **Chandeleer** — [Soutenir son travail](%s)"
 
-#: internal/usage.go:6
-msgid "Usage:"
-msgstr "Utilisation :"
+#: internal/messages.go:70 internal/messages.go:117
+#, go-format
+msgid ""
+"Use `ujust rebase-helper` to roll back or switch channels — [See the docs]"
+"(%s)"
+msgstr ""
+"Utilisez `ujust rebase-helper` pour basculer sur une version antérieure de "
+"votre système en cas de soucis — [Voir la documentation](%s)"
 
-#: internal/messages.go:113
+#: internal/messages.go:71
+msgid ""
+"**Like dinosaurs?** Try `ujust toggle-dinosaurs` for a Mesozoic surprise!"
+msgstr ""
+"**Aimez-vous les dinosaures?** Essayez `ujust toggle-dinosaurs` pour une "
+"surprise mésozoïque !"
+
+#: internal/messages.go:72 internal/messages.go:120
+#, go-format
+msgid ""
+"Are you a developer? Try the `Developer Experience` — [Check it out](%s)"
+msgstr ""
+"Êtes-vous développeur ? Essayez-donc l'`Experience Développeur\"` ! —  [En "
+"savoir plus](%s) "
+
+#: internal/messages.go:73
+#, go-format
+msgid ""
+"**%s is not a distro**, this is a custom image built on  Fedora Atomic "
+"Desktop technology — [View our mission](%s)"
+msgstr ""
+"**%s n'est pas une distribution**, c'est une image personnalisée créée à "
+"partir de la technologie  Fedora Atomic — [Voir notre mission](%s)"
+
+#: internal/messages.go:78
+#, go-format
+msgid "**Love Bazzite?** Help keep it going by [donating](%s)"
+msgstr ""
+"**Vous aimez Bazzite ?** Aidez-nous à continuer en [faisant un don](%s)"
+
+#: internal/messages.go:79
+#, go-format
+msgid ""
+"**Did an update break something?** Roll back, pin the previous release, or "
+"rebase to an older build — [view the guide](%s)"
+msgstr ""
+"**Une mise à jour a-t-elle cassé quelque chose ?** Revenez en arrière, "
+"épinglez la version précédente, ou basculez sur une version antérieure  — "
+"[Voir le guide](%s)"
+
+#: internal/messages.go:80
+#, go-format
+msgid ""
+"**Care about game preservation?** Support the Stop Killing Games initiative "
+"— [Learn more](%s)"
+msgstr ""
+"**Vous souciez vous de la préservation de vos jeux?** Soutenez l'initiative "
+"Stop Killing Games — [En savoir plus](%s)"
+
+#: internal/messages.go:81
+#, go-format
+msgid ""
+"**Prefer Distrobox for package installation!** It’s safer and easier — start "
+"with `ujust distrobox`. [More info](%s)"
+msgstr ""
+"**Privilégiez Distrobox pour installer des paquets** — C'est plus sûr et "
+"plus simple à entretenir. La commande `ujust distrobox` est là pour bien "
+"démarrer! — [En savoir plus](%s)"
+
+#: internal/messages.go:82
+#, go-format
+msgid ""
+"**Installing a non-Steam Windows game?** Use Lutris (pre-installed) for "
+"better Wine prefix handling — [View gaming guide](%s)"
+msgstr ""
+"**Des soucis à installer un jeu non-Steam ?** Utilisez Lutris (pré-installé) "
+"pour une meilleure gestion des préfixes Wine — [Voir le guide](%s)"
+
+#: internal/messages.go:83
+msgid ""
+"Bazzite uses BTRFS for all drives (including MicroSD). Note: **NTFS and "
+"exFAT are not supported.**"
+msgstr ""
+"Bazzite utilise BTRFS pour tout type de disque dur (MicroSD compris). Note: "
+"**NTFS et exFAT ne sont pas pris en charge.**"
+
+#: internal/messages.go:84
+#, go-format
+msgid "**Looking to set up Waydroid?** — [View our documentation](%s)"
+msgstr ""
+"**Vous souhaitez configurer Waydroid?** — [Voir notre documentation](%s)"
+
+#: internal/messages.go:85
+msgid ""
+"Bazzite uses ZSTD-compressed BTRFS with automatic deduplication — **more "
+"storage space for all your games!**"
+msgstr ""
+"Bazzite utilise un BTRFS compressé avec ZSTD à déduplication automatique - "
+"**plus d'espace de stockage pour tous vos jeux!**"
+
+#: internal/messages.go:86
+msgid ""
+"**Managing a large ROM library?** The ROM Properties Page shell extension "
+"(pre-installed) adds **thumbnails and metadata** to your files."
+msgstr ""
+"**Grande bibliothèque de ROMs ?** La page de propriétés ROM (pré-installée) "
+"rajoute des **vignettes et métadonnées** à tous vos fichiers. "
+
+#: internal/messages.go:87
+#, go-format
+msgid ""
+"Use the `bazzite-rollback-helper` to roll back or rebase to older builds — "
+"[More info](%s)"
+msgstr ""
+"Utilisez `bazzite-rollback-helper` pour revenir en arrière ou basculer vers "
+"des versions antérieures — [En savoir plus](%s)"
+
+#: internal/messages.go:88
+msgid ""
+"Use ProtonPlus to install custom Proton versions. We recommend Proton-GE for "
+"Steam games and Wine-GE for non-Steam use cases."
+msgstr ""
+"Utilisez ProtonPlus pour installer des versions personnalisées de Proton. "
+"Nous recommandons Proton-GE pour les jeux Steam et Wine-GE pour les autres "
+"jeux non-Steam."
+
+#: internal/messages.go:89
+#, go-format
+msgid "**Want to customize your desktop?** — [Follow our guide](%s)"
+msgstr "**Envie de personnaliser votre bureau ?** — [Suivez notre guide](%s)"
+
+#: internal/messages.go:90
+msgid ""
+"**Performance profiling is built-in** — use `sysprof`, `bpftrace`, or `perf` "
+"to analyze your system."
+msgstr ""
+"**Des outils de profilage sont intégrés** — essayez `sysprof`, `bpftrace` ou "
+"`perf` pour analyser votre système."
+
+#: internal/messages.go:91
+#, go-format
+msgid ""
+"**%s is not a distro** — it’s a custom image built on  Fedora Atomic "
+"Desktop — [View our mission](%s)"
+msgstr ""
+"**%s n'est pas une distribution** — c'est une image personnalisée créée à "
+"partir de la technologie  Fedora Atomic — [Voir notre mission](%s)"
+
+#: internal/messages.go:92
+#, go-format
+msgid ""
+"**Support indie game preservation and OSS developers** — [Join Hit Save!'s "
+"Patreon](%s)"
+msgstr ""
+"**Soutenez la préservation de jeux indépendants et les développeurs de "
+"l'Open-Source !** — [Rejoignez le Patreon de Hit Save!](%s)"
+
+#: internal/messages.go:93
+msgid ""
+"Use `ujust changelogs` to view a summary of the package changes since the "
+"last update."
+msgstr ""
+"Utilisez `ujust changelogs` pour afficher un résumé des changements depuis "
+"la dernière mise à jour."
+
+#: internal/messages.go:98
+msgid ""
+"**Missing the hot corner?** Move your mouse to the edge at the bottom of "
+"your screen to trigger the Activities overview, or re-enable it in Settings."
+msgstr ""
+"**Le coin actif vous manque-t-il ?** Déplacez votre curseur vers le bord "
+"inférieur de l'écran pour déclencher l’aperçu des activités, ou réactivez-le "
+"dans Paramètres."
+
+#: internal/messages.go:103
+msgid "**Want to install Decky Loader?** Use `ujust setup-decky install`"
+msgstr ""
+"**Envie d'installer Decky Loader ?** Utilisz `ujust setup-decky install`"
+
+#: internal/messages.go:104
+msgid ""
+"󰓓 The Steam game mode updater also updates Bazzite, Flatpak apps, and "
+"Distrobox containers. The changelog is from the Steam client."
+msgstr ""
+"󰓓 Le programme de mise à jour du Steam game mode met également à jour "
+"Bazzite, vos applications et vos conteneurs Distrobox. Les notes de mise à "
+"jour proviennent du client Steam."
+
+#: internal/messages.go:105
+msgid ""
+"**Install a game with Lutris?** Right-click on it and `Create Steam "
+"Shortcut` to play it in 󰓓 Steam game mode."
+msgstr ""
+"**Besoin d'installer un jeu avec Lutris ? Il suffit d'un clic droit sur "
+"votre jeu et cliquer sur `Create steam shortcut` pour le lancer depuis le 󰓓 "
+"Steam game mode."
+
+#: internal/messages.go:106
+#, go-format
+msgid ""
+"**Missing game icons?** Use the `SteamGridDB` plugin for Decky Loader to add "
+"missing art — [More info](%s)"
+msgstr ""
+"**Des icônes manquantes ?** Utilisez le plugin Decky Loader `SteamGridDB` "
+"pour ajouter des couvertures et des bannières pour vos jeux — [En savoir "
+"plus](%s)"
+
+#: internal/messages.go:107
+#, go-format
+msgid ""
+"**Not sure which games are Linux-compatible?** The `ProtonDB Badges` plugin "
+"for Decky Loader adds community-powered compatibility badges to your entire "
+"󰓓 Steam Library — [More info](%s)"
+msgstr ""
+"**Confus par la compatibilité de vos jeux avec Linux ?** Le plugin Decky "
+"Loader `ProtonDB Badges` rajoute des badges de compatibilité gérés par la "
+"communauté pour toute votre bibliothèque 󰓓 Steam — [En savoir plus](%s)"
+
+#: internal/messages.go:108
+msgid ""
+"**Want more security?** Use **Tailscale** and **OpenVPN** (built-in) with "
+"the `Tailscale Control` and `TunnelDeck` Decky Loader plugins in 󰓓 Steam "
+"game mode."
+msgstr ""
+"**Recherchez-vous plus de sécurité ?** Utilisez **Tailscale** et **OpenVPN** "
+"(intégrés) grâce aux plugins Decky Loader `Tailscale Control` et "
+"`TunnelDeck` depuis le 󰓓 Steam game mode."
+
+#: internal/messages.go:109
+#, go-format
+msgid ""
+"**Using a handheld with limited buttons?** 󰓓 Steam game mode supports touch "
+"gestures to slide out the menus, thanks to [ChimeraOS](%s)"
+msgstr ""
+"**Utilisez-vous une console portable avec un nombre de boutons limité?** 󰓓 "
+"Steam game mode prend en charge les gestes tactiles pour faire glisser les "
+"menus, grâce à [ChimeraOS](%s)"
+
+#: internal/messages.go:114
+#, go-format
+msgid "**Love Bluefin?** Help keep it going by [donating](%s)"
+msgstr ""
+"**Vous aimez Bluefin ?** Aidez-nous à continuer en [faisant un don](%s)"
+
+#: internal/messages.go:115
+#, go-format
+msgid ""
+"Need technical details? — Check out the [Bluefin Administrator's Guide](%s)"
+msgstr ""
+"Pour plus d'informations techniques, jetez un coup d'œil au [guide "
+"d'administrateur Bluefin](%s)"
+
+#: internal/messages.go:116
+#, go-format
 msgid ""
 "Use DistroShelf to run apps from other distros in isolated containers — no "
 "commitment required — [Check it out](%s)"
@@ -533,67 +570,101 @@ msgstr ""
 "Utilisez Distroshelf pour lancer des applis d'autres distributions dans des "
 "conteneurs isolés — aucun engagement n'est requis — [Aller voir](%s)"
 
-#: internal/messages.go:17
-msgid "Use `Ctrl + Alt + T` to quickly open a terminal."
-msgstr "Appuyez sur `Ctrl + Alt + T` pour ouvrir un terminal rapidement."
-
-#: internal/messages.go:19
+#: internal/messages.go:118
+#, go-format
 msgid ""
-"Use `brew search` and `brew install` to install packages. %s will take care "
-"of the updates automatically."
+"The `Gradia Capture` extension helps you take better screenshots! Thank "
+"Alexander Vanhee — [Support his work!](%s)"
 msgstr ""
-"Les commandes `brew search` et `brew install` vous permettent de rechercher "
-"et d'installer des paquets. %s les mettra à jour automatiquement."
+"L'extension **Gradia Capture** vous aide à prendre de meilleures captures "
+"d'écran ! Remerciez Alexander Vanhee en [soutenant son travail](%s)"
 
-#: internal/messages.go:114 internal/messages.go:71
-msgid ""
-"Use `ujust rebase-helper` to roll back to a specific image or switch "
-"channels — [See the docs for details](%s)"
+#: internal/messages.go:119
+#, go-format
+msgid "Most wallpapers are by **Jacob Schnurr** — [Check out his Etsy](%s)"
 msgstr ""
-"La commande `ujust rebase-helper` peut vous aidez à basculer sur une version "
-"antérieure de votre système en cas de soucis — Pour plus de détails, [lisez "
-"la documentation](%s)"
+"La plupart des fonds d'écran sont faits par **Jacob Schnurr** — [Voir sa "
+"page Etsy](%s)"
 
-#: internal/messages.go:33
+#: internal/messages.go:130
 msgid ""
-"`sl` makes a Steam locomotive appear in your terminal! Install it with `brew "
-"install sl`"
+"**Container development is OS-agnostic** — devcontainers work on Linux, "
+"macOS, and Windows."
 msgstr ""
-"`sl` fait apparaître une locomotive à vapeur dans votre terminal! Installez-"
-"le avec `brew install sl`"
+"**Le développement par conteneur est indépendant de votre système** — les "
+"devcontainers fonctionnent sur Linux, macOS et Windows.\""
 
-#: internal/messages.go:20
+#: internal/messages.go:131
+#, go-format
 msgid ""
-"`ujust --choose` will show you each ujust shortcut and the script they're "
-"running."
+"**Develop with devcontainers** — use `devcontainer.json` to create isolated, "
+"reproducible environments! - Activate the workflow with `ujust devmode` and "
+"[get started today !](%s)"
 msgstr ""
-"La commande `ujust --choose` affiche chaque commande `ujust` et les scripts "
-"qu'ils utilisent."
+"En utilisant des `devcontainer.json`, vous pouvez créer des environnements "
+"isolés et reproductibles qui marchent sur n'importe quel système ! - Activez "
+"le workflow avec `ujust devmode` et [démarrez dès aujourd'hui !](%s)"
 
-#: internal/messages.go:136
+#: internal/messages.go:132
 msgid ""
-"`ujust bbrew` and select `k8s-tools` that will get you started with "
-"Kubernetes development tools like `kind` and `kubectl`."
+"For multi-container setups, use `docker compose` instead of a single "
+"devcontainer."
 msgstr ""
-"La section `k8s-tools` de `ujust bbrew` vous affiche notre sélection "
-"d'outils Kubernetes pour bien commencer, comme `kind` et `kubectl`."
+"Pour les installations multi-conteneurs, utilisez un `docker compose` à la "
+"place d'un seul devcontainer."
 
-#: internal/messages.go:21
+#: internal/messages.go:138
+#, go-format
 msgid ""
-"`ujust changelogs` shows a summary of the package changes since the last "
-"update."
+"**%s is your gateway to 󱃾 Kubernetes** — run `kind create cluster` to [get "
+"started](%s)"
 msgstr ""
-"La commande `ujust changelogs` affiche un résumé des changements depuis la "
-"dernière mise à jour."
+"**%s est votre porte d'entrée à 󱃾 Kubernetes** — entrez `kind create "
+"cluster` pour [commencer](%s)"
 
-#: internal/messages.go:100
+#: internal/messages.go:139
+#, go-format
 msgid ""
-"󰓓 The Steam game mode updater also updates Bazzite, Flatpak apps, and "
-"Distrobox containers. The changelog shown is from the Steam client."
+"**%s is your gateway to Cloud Native** — find your flock at "
+"[landscape.cncf.io](%s)"
 msgstr ""
-"󰓓 Le programme de mise à jour de Steam game mode met également à jour "
-"Bazzite, vos applications et vos conteneurs Distrobox. Les notes de mise à "
-"jour affichées proviennent du client Steam."
+"**%s est votre porte d'entrée au Cloud Native** — trouvez votre vocation à "
+"[landscape.cncf.io](%s)"
+
+#: internal/messages.go:140
+#, go-format
+msgid ""
+"%s separates the OS from your development environment — **embrace the cloud-"
+"native workflow**!"
+msgstr ""
+"**%s sépare le système d'exploitation de votre environnement de "
+"développement** — prenez en mains le workflow cloud-native !"
+
+#: internal/messages.go:141
+msgid ""
+"Use `ujust bbrew` and select `k8s-tools` to install Kubernetes tools like "
+"`kind` and `kubectl`."
+msgstr ""
+"Utilisez `ujust bbrew` et sélectionnez `k8s-tools` pour installer des outils "
+"Kubernetes comme `kind` et `kubectl`."
+
+#: internal/usage.go:6
+msgid "Usage:"
+msgstr "Utilisation :"
+
+#: main.go:41
+msgid "Invalid command."
+msgstr "Commande invalide."
+
+#~ msgid "Don't forget to check the [release notes](%s)"
+#~ msgstr "N'oubliez pas de consulter les [notes de version](%s)"
+
+#~ msgid ""
+#~ "Prefer `docker compose` for multi-container setups where a single "
+#~ "devcontainer isn't enough."
+#~ msgstr ""
+#~ "Utilisez `docker compose` pour les configurations multi-conteneur si les "
+#~ "devcontainers ne suffisent pas."
 
 #~ msgid "Wrong usage of the `tags` subcommand."
 #~ msgstr "Mauvaise utilisation de la sous-commande `tags`."
