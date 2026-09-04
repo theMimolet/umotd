@@ -115,7 +115,7 @@ func GetRandomMessage(l *gotext.Locale, tags []string) string {
 			l.Get("Need technical details? — Check out the [Bluefin Administrator's Guide](%s)", "https://docs.projectbluefin.io/administration"),
 			l.Get("Use DistroShelf to run apps from other distros in isolated containers — no commitment required — [Check it out](%s)", "appstream://com.ranfdev.DistroShelf"),
 			l.Get("Use `ujust rebase-helper` to roll back or switch channels — [See the docs](%s)", "https://docs.projectbluefin.io/administration/#switching-between-streams"),
-			l.Get("The `Gradia Capture` extension helps you take better screenshots! [Support the developer's work](%s)", "https://ko-fi.com/alexandervanhee"),
+			l.Get("The `Gradia Capture` extension helps you take better screenshots! Thank Alexander Vanhee — [Support his work!](%s)", "https://ko-fi.com/alexandervanhee"),
 			l.Get("Most wallpapers are by **Jacob Schnurr** — [Check out his Etsy](%s)", "https://www.etsy.com/shop/JSchnurrCommissions"),
 			l.Get("Are you a developer? Try the `Developer Experience` — [Check it out](%s)", "https://docs.projectbluefin.io/bluefin-dx/"),
 			// l.Get("**Bluefin Dakotaraptor** is the newest addition to the Bluefin family! — [Check it out](%s)", "https://docs.projectbluefin.io/dakota/"),
